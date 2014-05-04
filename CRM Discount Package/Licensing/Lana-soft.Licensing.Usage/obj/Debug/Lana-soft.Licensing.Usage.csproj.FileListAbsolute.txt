@@ -1,0 +1,14 @@
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Celenia.Licensing.Usage\bin\Debug\Lana-soft.Licensing.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Celenia.Licensing.Usage\bin\Debug\Lana-soft.Licensing.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Celenia.Licensing.Usage\obj\Debug\Lana-soft.Licensing.Usage.csprojResolveAssemblyReference.cache
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Celenia.Licensing.Usage\bin\Debug\Lana-soft.Licensing.Usage.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Celenia.Licensing.Usage\bin\Debug\Lana-soft.Licensing.Usage.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Celenia.Licensing.Usage\obj\Debug\Lana-soft.Licensing.Usage.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Celenia.Licensing.Usage\obj\Debug\Lana-soft.Licensing.Usage.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Lana-soft.Licensing.Usage\bin\Debug\Lana-soft.Licensing.Usage.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Lana-soft.Licensing.Usage\bin\Debug\Lana-soft.Licensing.Usage.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Lana-soft.Licensing.Usage\bin\Debug\Lana-soft.Licensing.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Lana-soft.Licensing.Usage\bin\Debug\Lana-soft.Licensing.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Lana-soft.Licensing.Usage\obj\Debug\Lana-soft.Licensing.Usage.csprojResolveAssemblyReference.cache
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Lana-soft.Licensing.Usage\obj\Debug\Lana-soft.Licensing.Usage.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Lana-soft.Licensing.Usage\obj\Debug\Lana-soft.Licensing.Usage.pdb

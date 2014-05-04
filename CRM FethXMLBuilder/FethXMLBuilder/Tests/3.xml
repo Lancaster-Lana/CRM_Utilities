@@ -1,0 +1,11 @@
+
+	<entity name='activitymimeattachment'>
+		<attribute name='attachmentnumber' aggregate='count'/>
+		<attribute name='filename' alias='lok' aggregate='count'/>
+		<order attribute='filename'/>
+		<order attribute='mimetype' descending='true'/>
+		<filter type='and'>
+			<condition attribute='attachmentnumber' operator='eq' value = 'i'/>							
+		</filter>		
+	</entity>
+

@@ -1,0 +1,70 @@
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.exe
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.pdb
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder\bin\Debug\FetchXMLBuilder.UI.exe
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder\bin\Debug\FetchXMLBuilder.UI.pdb
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder\bin\Debug\FetchXMLBuilder.Services.dll
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder\bin\Debug\FethXMLBuilder.Business.dll
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder\bin\Debug\FetchXMLBuilder.Services.pdb
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder\bin\Debug\FethXMLBuilder.Business.pdb
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder\obj\Debug\ResolveAssemblyReference.cache
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.AttributesCtrl.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.ConditionCtrl.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.EditManager.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.EntityCtrl.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.OrderCtrl.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.FetchXMLControl.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.FilterCtrl.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.LinkedEntityCtrl.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.FetchXMLForm.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.Properties.Resources.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.ConditionFrm.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.EditLinkEntityFrm.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.FilterFrm.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder\obj\Debug\GenerateResource-ResGen.read.1.tlog
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder\obj\Debug\GenerateResource-ResGen.write.1.tlog
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.exe
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.pdb
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\bin\Debug\FetchXMLBuilder.UI.exe
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\bin\Debug\FetchXMLBuilder.UI.pdb
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\bin\Debug\FetchXMLBuilder.Services.dll
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\bin\Debug\FethXMLBuilder.Business.dll
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\bin\Debug\FetchXMLBuilder.Services.pdb
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\bin\Debug\FethXMLBuilder.Business.pdb
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.csprojResolveAssemblyReference.cache
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.AttributesCtrl.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.ConditionCtrl.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.EditManager.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.EntityCtrl.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.OrderCtrl.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.FetchXMLControl.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.FilterCtrl.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.LinkedEntityCtrl.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.FetchXMLForm.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.Properties.Resources.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.ConditionFrm.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.EditLinkEntityFrm.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.FilterFrm.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.csproj.GenerateResource.Cache
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.exe
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder\bin\Debug\FetchXMLBuilder.UI.exe
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder\bin\Debug\FetchXMLBuilder.UI.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder\bin\Debug\FetchXMLBuilder.Services.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder\bin\Debug\FethXMLBuilder.Business.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder\bin\Debug\FetchXMLBuilder.Services.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder\bin\Debug\FethXMLBuilder.Business.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.csprojResolveAssemblyReference.cache
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.AttributesCtrl.resources
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.ConditionCtrl.resources
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.EditManager.resources
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.EntityCtrl.resources
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.OrderCtrl.resources
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.FetchXMLControl.resources
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.FilterCtrl.resources
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.LinkedEntityCtrl.resources
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.FetchXMLForm.resources
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.Properties.Resources.resources
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.ConditionFrm.resources
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.EditLinkEntityFrm.resources
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.FilterFrm.resources
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder\obj\Debug\FetchXMLBuilder.UI.csproj.GenerateResource.Cache

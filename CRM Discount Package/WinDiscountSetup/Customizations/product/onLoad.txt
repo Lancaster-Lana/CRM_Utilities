@@ -1,0 +1,10 @@
+//                                   ___Discount Package 3.0___
+//___Detect customer accountid for quotedetail form from IFrame_Quote 
+if((window.frameElement != null) &&(window.frameElement.document!= null))
+{
+ 
+   if((window.frameElement.document.getElementById("new_productgroup")!= null) 
+                 &&(document.getElementById("new_productdiscountgroupid")!= null)
+                 &&(document.getElementById("new_productdiscountgroupid").DataValue!= null))
+  window.frameElement.document.getElementById("new_productgroup").value = document.getElementById("new_productdiscountgroupid").DataValue[0].id;
+}

@@ -1,0 +1,6 @@
+//                               ___Discount Package 3.0___
+if((crmForm.all.IFRAME_Product != null)&&(crmForm.all.productid != null)&&(crmForm.all.productid.DataValue != null))
+{
+           var productUrl = "/_forms/readonly/readonly.aspx?objTypeCode=1024&id="+crmForm.all.productid.DataValue[0].id;
+           crmForm.all.IFRAME_Product.src = productUrl;
+}

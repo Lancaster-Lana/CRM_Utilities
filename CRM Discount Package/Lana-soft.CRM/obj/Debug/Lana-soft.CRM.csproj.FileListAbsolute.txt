@@ -1,0 +1,8 @@
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\CeleniaCRM\bin\Debug\Lana-soft.CRM.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\CeleniaCRM\bin\Debug\Lana-soft.CRM.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\CeleniaCRM\obj\Debug\Lana-soft.CRM.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\CeleniaCRM\obj\Debug\Lana-soft.CRM.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Lana-soft.CRM\bin\Debug\Lana-soft.CRM.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Lana-soft.CRM\bin\Debug\Lana-soft.CRM.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Lana-soft.CRM\obj\Debug\Lana-soft.CRM.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Lana-soft.CRM\obj\Debug\Lana-soft.CRM.pdb

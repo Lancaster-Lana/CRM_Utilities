@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<entity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="activitymimeattachment">
+  <NoAttributes>false</NoAttributes>
+  <AllAttributes>false</AllAttributes>
+  <attribute name="attachmentnumber" aggregate="count" alias="" />
+  <filter name="" type="or">
+    <condition name="" attribute="attachmentnumber" operator="in" aggregate="false" alias="">
+      <value />
+    </condition>
+  </filter>
+  <filter name="" type="and">
+    <condition name="" attribute="filename" operator="eq" value="hg" aggregate="false" alias="">
+      <value>hg</value>
+    </condition>
+    <filter name="" type="or">
+      <condition name="" attribute="body" operator="eq" value="j" aggregate="false" alias="">
+        <value>j</value>
+      </condition>
+    </filter>
+  </filter>
+  <filter name="" type="and">
+    <condition name="" attribute="filesize" operator="eq" value="47" aggregate="false" alias="">
+      <value>47</value>
+    </condition>
+  </filter>
+  <filter name="" type="and">
+    <condition name="" attribute="attachmentnumber" operator="in" aggregate="false" alias="">
+      <value />
+    </condition>
+  </filter>
+  <link-entity name="attributemap" alias="" from="entitymapid" to="activitymimeattachmentid" link-type="outer">
+    <NoAttributes>false</NoAttributes>
+    <AllAttributes>false</AllAttributes>
+    <filter name="" type="and">
+      <condition name="" attribute="entitymapid" operator="eq" value="0[" aggregate="false" alias="">
+        <value>0[</value>
+      </condition>
+    </filter>
+    <link-entity name="activityparty" alias="" from="donotfax" to="deletionstatecode" link-type="">
+      <NoAttributes>false</NoAttributes>
+      <AllAttributes>false</AllAttributes>
+    </link-entity>
+    <order name="" descending="false" attribute="issystem" />
+    <order name="" descending="false" attribute="organizationid" />
+  </link-entity>
+  <order name="" descending="false" attribute="filename" />
+</entity>

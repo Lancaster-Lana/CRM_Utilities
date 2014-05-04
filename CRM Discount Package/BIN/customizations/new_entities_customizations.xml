@@ -1,0 +1,3729 @@
+<ImportExportXml version="3.0.5300.0">
+  <Entities>
+    <Entity>
+      <Name LocalizedName="Sales Lines Discount" OriginalName="Sales Lines Discount">New_SalesLinesDiscount</Name>
+      <ObjectTypeCode>10001</ObjectTypeCode>
+      <LocalizedName>Sales Lines Discount</LocalizedName>
+      <LocalizedCollectionName>SalesLinesDiscount</LocalizedCollectionName>
+      <EntityInfo>
+        <entity Name="New_SalesLinesDiscount">
+          <HasRelatedNotes>True</HasRelatedNotes>
+          <HasRelatedActivities>True</HasRelatedActivities>
+          <ObjectTypeCode>10001</ObjectTypeCode>
+          <BaseTableName>New_SalesLinesDiscountBase</BaseTableName>
+          <WorkflowEventMask>-1</WorkflowEventMask>
+          <IsCustomizable>1</IsCustomizable>
+          <IsMappable>1</IsMappable>
+          <OwnershipTypeMask>UserOwned</OwnershipTypeMask>
+          <IsAudited>1</IsAudited>
+          <EntityMask>ActivityPointer</EntityMask>
+          <IsReplicated>1</IsReplicated>
+          <IsReplicationUserFiltered>1</IsReplicationUserFiltered>
+          <IsCustomEntity>1</IsCustomEntity>
+          <LocalizedName>Sales Lines Discount</LocalizedName>
+          <LocalizedCollectionName>CRM_SalesLinesDiscount</LocalizedCollectionName>
+          <Description />
+          <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+          <ExtensionTableName>New_SalesLinesDiscountExtensionBase</ExtensionTableName>
+          <ReportViewName>FilteredNew_SalesLinesDiscount</ReportViewName>
+          <IsRenameable>1</IsRenameable>
+          <attributes>
+            <attribute PhysicalName="CreatedBy">
+              <Type>lookup</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ReferencedEntityObjectTypeCode>8</ReferencedEntityObjectTypeCode>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Unique identifier of the user who created the record.</Description>
+            </attribute>
+            <attribute PhysicalName="CreatedOn">
+              <Type>datetime</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Date and time when the record was created.</Description>
+            </attribute>
+            <attribute PhysicalName="DeletionStateCode">
+              <Type>int</Type>
+            </attribute>
+            <attribute PhysicalName="ModifiedBy">
+              <Type>lookup</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ReferencedEntityObjectTypeCode>8</ReferencedEntityObjectTypeCode>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Unique identifier of the user who modified the record.</Description>
+            </attribute>
+            <attribute PhysicalName="ModifiedOn">
+              <Type>datetime</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Date and time when the record was modified.</Description>
+            </attribute>
+            <attribute PhysicalName="New_customergroupflag">
+              <Type>bit</Type>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsCustomField>1</IsCustomField>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Flag to use customer name or customer group name</Description>
+            </attribute>
+            <attribute PhysicalName="new_customergroupflagName">
+              <Type>virtual</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsCustomField>1</IsCustomField>
+              <IsLogical>1</IsLogical>
+              <AttributeOf>New_customergroupflag</AttributeOf>
+              <XmlAbbreviation>name</XmlAbbreviation>
+            </attribute>
+            <attribute PhysicalName="New_discountpercents">
+              <Type>float</Type>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsCustomField>1</IsCustomField>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description />
+            </attribute>
+            <attribute PhysicalName="New_endingdate">
+              <Type>datetime</Type>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsCustomField>1</IsCustomField>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description />
+            </attribute>
+            <attribute PhysicalName="New_minimumquantity">
+              <Type>float</Type>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsCustomField>1</IsCustomField>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Product minimum quantity for discount</Description>
+            </attribute>
+            <attribute PhysicalName="New_name">
+              <Type>nvarchar</Type>
+              <Length>200</Length>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsCustomField>1</IsCustomField>
+              <DisplayMask>ActivityPointerRegardingName|PrimaryName|ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>The name of the custom entity.</Description>
+            </attribute>
+            <attribute PhysicalName="New_productgroupflag">
+              <Type>bit</Type>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsCustomField>1</IsCustomField>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Flag to use product name or product group name</Description>
+            </attribute>
+            <attribute PhysicalName="new_productgroupflagName">
+              <Type>virtual</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsCustomField>1</IsCustomField>
+              <IsLogical>1</IsLogical>
+              <AttributeOf>New_productgroupflag</AttributeOf>
+              <XmlAbbreviation>name</XmlAbbreviation>
+            </attribute>
+            <attribute PhysicalName="New_SalesLinesDiscountId">
+              <Type>primarykey</Type>
+              <IsNullable>0</IsNullable>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsPKAttribute>1</IsPKAttribute>
+              <DisplayMask>ValidForAdvancedFind|RequiredForGrid</DisplayMask>
+              <Description>Unique identifier for entity instances</Description>
+            </attribute>
+            <attribute PhysicalName="New_startingdate">
+              <Type>datetime</Type>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsCustomField>1</IsCustomField>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description />
+            </attribute>
+            <attribute PhysicalName="New_UOMName">
+              <Type>nvarchar</Type>
+              <Length>200</Length>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsCustomField>1</IsCustomField>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description />
+            </attribute>
+            <attribute PhysicalName="OwnerId">
+              <Type>owner</Type>
+              <IsNullable>0</IsNullable>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsLogical>1</IsLogical>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Owner Id</Description>
+            </attribute>
+            <attribute PhysicalName="OwnerIdDsc">
+              <Type>int</Type>
+              <IsNullable>0</IsNullable>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsLogical>1</IsLogical>
+              <AttributeOf>OwnerId</AttributeOf>
+              <XmlAbbreviation>dsc</XmlAbbreviation>
+              <Description />
+            </attribute>
+            <attribute PhysicalName="OwnerIdName">
+              <Type>nvarchar</Type>
+              <Length>320</Length>
+              <IsNullable>0</IsNullable>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsLogical>1</IsLogical>
+              <AttributeOf>OwnerId</AttributeOf>
+              <XmlAbbreviation>name</XmlAbbreviation>
+              <IsSortAttribute>1</IsSortAttribute>
+              <Description>Name of the owner</Description>
+            </attribute>
+            <attribute PhysicalName="OwnerIdType">
+              <Type>int</Type>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsLogical>1</IsLogical>
+              <DisplayMask>ObjectTypeCode</DisplayMask>
+              <AttributeOf>OwnerId</AttributeOf>
+              <XmlAbbreviation>type</XmlAbbreviation>
+              <Description>Owner Id Type</Description>
+            </attribute>
+            <attribute PhysicalName="OwningBusinessUnit">
+              <Type>lookup</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ReferencedEntityObjectTypeCode>10</ReferencedEntityObjectTypeCode>
+              <Description>Unique identifier for the business unit that owns the record</Description>
+            </attribute>
+            <attribute PhysicalName="OwningUser">
+              <Type>lookup</Type>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ReferencedEntityObjectTypeCode>8</ReferencedEntityObjectTypeCode>
+              <AggregateOf>OwnerId</AggregateOf>
+              <Description>Unique identifier for the user that owns the record.</Description>
+            </attribute>
+            <attribute PhysicalName="StateCode">
+              <Type>state</Type>
+              <IsNullable>0</IsNullable>
+              <ValidForReadApi>1</ValidForReadApi>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Status of the Sales Lines Discount</Description>
+            </attribute>
+            <attribute PhysicalName="statecodeName">
+              <Type>virtual</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsLogical>1</IsLogical>
+              <AttributeOf>StateCode</AttributeOf>
+              <XmlAbbreviation>name</XmlAbbreviation>
+            </attribute>
+            <attribute PhysicalName="StatusCode">
+              <Type>status</Type>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Reason for the status of the Sales Lines Discount</Description>
+            </attribute>
+            <attribute PhysicalName="statuscodeName">
+              <Type>virtual</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsLogical>1</IsLogical>
+              <AttributeOf>StatusCode</AttributeOf>
+              <XmlAbbreviation>name</XmlAbbreviation>
+            </attribute>
+            <attribute PhysicalName="VersionNumber">
+              <Type>timestamp</Type>
+            </attribute>
+          </attributes>
+        </entity>
+      </EntityInfo>
+      <FieldXml>
+        <entity name="new_saleslinesdiscount" objecttypecode="10001">
+          <fields>
+            <field name="new_saleslinesdiscountid" requiredlevel="na">
+              <displaynames>
+                <displayname description="Sales Lines Discount" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="createdon" requiredlevel="na" format="date">
+              <displaynames>
+                <displayname description="Created On" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="createdby" requiredlevel="na" lookupclass="SystemUsers" lookupstyle="single">
+              <displaynames>
+                <displayname description="Created By" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="modifiedon" requiredlevel="na" format="date">
+              <displaynames>
+                <displayname description="Modified On" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="modifiedby" requiredlevel="na" lookupclass="SystemUsers" lookupstyle="single">
+              <displaynames>
+                <displayname description="Modified By" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="ownerid" requiredlevel="na">
+              <displaynames>
+                <displayname description="Owner" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="owningbusinessunit" requiredlevel="na">
+              <displaynames>
+                <displayname description="Owning Business Unit" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="statecode" requiredlevel="na">
+              <displaynames>
+                <displayname description="Status" languagecode="1033" />
+              </displaynames>
+              <states nextvalue="0">
+                <state value="0" defaultstatus="1" invariantname="Active">
+                  <labels>
+                    <label description="Active" languagecode="1033" />
+                  </labels>
+                </state>
+                <state value="1" defaultstatus="2" invariantname="Inactive">
+                  <labels>
+                    <label description="Inactive" languagecode="1033" />
+                  </labels>
+                </state>
+              </states>
+            </field>
+            <field name="statuscode" requiredlevel="na">
+              <displaynames>
+                <displayname description="Status Reason" languagecode="1033" />
+              </displaynames>
+              <statuses nextvalue="3">
+                <status value="1" state="0">
+                  <labels>
+                    <label description="Active" languagecode="1033" />
+                  </labels>
+                </status>
+                <status value="2" state="1">
+                  <labels>
+                    <label description="Inactive" languagecode="1033" />
+                  </labels>
+                </status>
+              </statuses>
+            </field>
+            <field name="new_name" requiredlevel="required" maxlength="100" format="text">
+              <displaynames>
+                <displayname description="Name" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="new_startingdate" requiredlevel="na" format="datetime">
+              <displaynames>
+                <displayname description="Starting Date" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="new_endingdate" requiredlevel="na" format="datetime">
+              <displaynames>
+                <displayname description="Ending Date" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="new_discountpercents" requiredlevel="required" minvalue="0" maxvalue="100" accuracy="2">
+              <displaynames>
+                <displayname description="Discount Percents" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="new_uomname" requiredlevel="na" maxlength="100" format="text">
+              <displaynames>
+                <displayname description="UOM Name" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="new_productgroupflag" requiredlevel="na" defaultvalue="1">
+              <displaynames>
+                <displayname description="productgroupflag" languagecode="1033" />
+              </displaynames>
+              <options nextvalue="1">
+                <option value="1">
+                  <labels>
+                    <label description="Product Name" languagecode="1033" />
+                  </labels>
+                </option>
+                <option value="0">
+                  <labels>
+                    <label description="Product Group" languagecode="1033" />
+                  </labels>
+                </option>
+              </options>
+            </field>
+            <field name="new_customergroupflag" requiredlevel="na" defaultvalue="1">
+              <displaynames>
+                <displayname description="customergroupflag" languagecode="1033" />
+              </displaynames>
+              <options nextvalue="1">
+                <option value="1">
+                  <labels>
+                    <label description="Customer Name" languagecode="1033" />
+                  </labels>
+                </option>
+                <option value="0">
+                  <labels>
+                    <label description="Customer Group" languagecode="1033" />
+                  </labels>
+                </option>
+              </options>
+            </field>
+            <field name="new_minimumquantity" requiredlevel="required" minvalue="1" maxvalue="1000000000" accuracy="2">
+              <displaynames>
+                <displayname description="Minimum Quantity" languagecode="1033" />
+              </displaynames>
+            </field>
+          </fields>
+        </entity>
+      </FieldXml>
+      <FormXml>
+        <forms>
+          <entity name="new_saleslinesdiscount" objecttypecode="10001">
+            <form type="main" id="{b0844134-3ee2-4591-b740-e02e48c3cbb1}">
+              <tabs>
+                <tab verticallayout="true" id="{e5b9dd94-48f7-42e1-ae05-1e5e66858425}" IsUserDefined="1">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <sections>
+                    <section showlabel="true" showbar="true" locklevel="0" id="{6004e752-618b-db11-9b7d-0003ff5968ea}" IsUserDefined="1" layout="varwidth" columns="11">
+                      <labels>
+                        <label description="Product Parameters" languagecode="1033" />
+                      </labels>
+                      <rows>
+                        <row>
+                          <cell auto="false" showlabel="true" locklevel="0" rowspan="1">
+                            <labels>
+                              <label description="Type" languagecode="1033" />
+                            </labels>
+                            <events>
+                              <event name="onchange" application="false" active="true">
+                                <script><![CDATA[//            ___Discount Package 3.0___
+
+var productGroupFlag = crmForm.all.new_productgroupflag;
+if(productGroupFlag != null)
+{       
+     if (crmForm.all.new_productgroupflag.DataValue)
+    {
+         crmForm.all.new_relatedproductid.disabled= false;
+         crmForm.all.new_productdiscountgroupid.disabled =true;
+         crmForm.all.new_productdiscountgroupid.DataValue = null;
+    }
+   else
+   { 
+         crmForm.all.new_relatedproductid.disabled= true;
+         crmForm.all.new_productdiscountgroupid.disabled =false;
+         crmForm.all.new_relatedproductid.DataValue = null;
+    }
+}]]></script>
+                                <dependencies>
+                                  <dependency id="new_productgroupflag" />
+                                  <dependency id="new_productdiscountgroupid" />
+                                  <dependency id="new_relatedproductid" />
+                                </dependencies>
+                              </event>
+                            </events>
+                            <control id="new_productgroupflag" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="new_productgroupflag" disabled="false" />
+                          </cell>
+                          <cell>
+                            <labels />
+                          </cell>
+                        </row>
+                        <row>
+                          <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="2">
+                            <labels>
+                              <label description="Related Product" languagecode="1033" />
+                            </labels>
+                            <control id="new_relatedproductid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_relatedproductid" disabled="false" />
+                          </cell>
+                        </row>
+                        <row>
+                          <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1">
+                            <labels>
+                              <label description="UOM Name" languagecode="1033" />
+                            </labels>
+                            <events>
+                              <event name="onchange" application="false" active="false">
+                                <script><![CDATA[]]></script>
+                                <dependencies />
+                              </event>
+                            </events>
+                            <control id="new_uomname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_uomname" disabled="false" />
+                          </cell>
+                          <cell>
+                            <labels />
+                          </cell>
+                        </row>
+                        <row>
+                          <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="2">
+                            <labels>
+                              <label description="Product Discount Group Name" languagecode="1033" />
+                            </labels>
+                            <control id="new_productdiscountgroupid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_productdiscountgroupid" disabled="false" />
+                          </cell>
+                        </row>
+                      </rows>
+                    </section>
+                    <section showlabel="true" showbar="true" locklevel="0" id="{40dfac74-618b-db11-9b7d-0003ff5968ea}" IsUserDefined="1" layout="varwidth" columns="11">
+                      <labels>
+                        <label description="Customer Parameters" languagecode="1033" />
+                      </labels>
+                      <rows>
+                        <row>
+                          <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1">
+                            <labels>
+                              <label description="Type" languagecode="1033" />
+                            </labels>
+                            <events>
+                              <event name="onchange" application="false" active="true">
+                                <script><![CDATA[//     ___Discount Package 3.0___
+
+var customerGroupFlag = crmForm.all.new_customergroupflag;
+if(customerGroupFlag != null)
+{       
+     if (customerGroupFlag.DataValue)
+    {
+         crmForm.all.new_parentaccountid.disabled= false;
+         crmForm.all.new_customerdiscountgroupid.disabled =true;
+         crmForm.all.new_customerdiscountgroupid.DataValue = null;
+    }
+   else
+   { 
+         crmForm.all.new_parentaccountid.disabled= true;
+         crmForm.all.new_customerdiscountgroupid.disabled =false;
+         crmForm.all.new_parentaccountid.DataValue = null;
+    }
+}]]></script>
+                                <dependencies />
+                              </event>
+                            </events>
+                            <control id="new_customergroupflag" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="new_customergroupflag" disabled="false" />
+                          </cell>
+                          <cell showlabel="true" colspan="1">
+                            <labels />
+                          </cell>
+                        </row>
+                        <row>
+                          <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="2">
+                            <labels>
+                              <label description="Parent Account" languagecode="1033" />
+                            </labels>
+                            <control id="new_parentaccountid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_parentaccountid" disabled="false" />
+                          </cell>
+                        </row>
+                        <row>
+                          <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="2">
+                            <labels>
+                              <label description="Customer Discount Group Name" languagecode="1033" />
+                            </labels>
+                            <control id="new_customerdiscountgroupid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_customerdiscountgroupid" disabled="false" />
+                          </cell>
+                        </row>
+                      </rows>
+                    </section>
+                    <section showlabel="true" showbar="true" locklevel="0" id="{905cb2fa-6a8b-db11-9b7d-0003ff5968ea}" IsUserDefined="1" layout="varwidth" columns="11">
+                      <labels>
+                        <label description="Common Parameters" languagecode="1033" />
+                      </labels>
+                      <rows>
+                        <row>
+                          <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="2">
+                            <labels>
+                              <label description="Name" languagecode="1033" />
+                            </labels>
+                            <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" disabled="false" />
+                          </cell>
+                        </row>
+                        <row>
+                          <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1">
+                            <labels>
+                              <label description="Starting Date" languagecode="1033" />
+                            </labels>
+                            <control id="new_startingdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_startingdate" disabled="false" />
+                          </cell>
+                          <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1">
+                            <labels>
+                              <label description="Ending Date" languagecode="1033" />
+                            </labels>
+                            <control id="new_endingdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_endingdate" disabled="false" />
+                          </cell>
+                        </row>
+                        <row>
+                          <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1">
+                            <labels>
+                              <label description="Minimum Quantity" languagecode="1033" />
+                            </labels>
+                            <control id="new_minimumquantity" classid="{0D2C745A-E5A8-4c8f-BA63-C6D3BB604660}" datafieldname="new_minimumquantity" disabled="false" />
+                          </cell>
+                          <cell>
+                            <labels />
+                          </cell>
+                        </row>
+                        <row>
+                          <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="2">
+                            <labels>
+                              <label description="Discount Percents" languagecode="1033" />
+                            </labels>
+                            <control id="new_discountpercents" classid="{0D2C745A-E5A8-4c8f-BA63-C6D3BB604660}" datafieldname="new_discountpercents" disabled="false" />
+                          </cell>
+                        </row>
+                      </rows>
+                    </section>
+                  </sections>
+                </tab>
+                <tab id="{4017d58a-618b-db11-9b7d-0003ff5968ea}" IsUserDefined="1" locklevel="0">
+                  <labels>
+                    <label description="Administrations" languagecode="1033" />
+                  </labels>
+                  <sections>
+                    <section showlabel="false" showbar="false" locklevel="0" id="{4117d58a-618b-db11-9b7d-0003ff5968ea}" IsUserDefined="1" layout="varwidth" columns="11">
+                      <labels>
+                        <label description="Administration" languagecode="1033" />
+                      </labels>
+                      <rows>
+                        <row>
+                          <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1">
+                            <labels>
+                              <label description="Owner" languagecode="1033" />
+                            </labels>
+                            <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                          </cell>
+                          <cell showlabel="true" rowspan="1" colspan="1">
+                            <labels />
+                          </cell>
+                        </row>
+                      </rows>
+                    </section>
+                  </sections>
+                </tab>
+                <tab id="{a123af68-0c19-41f0-868d-c883d38c6e6b}" IsUserDefined="0">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <sections>
+                    <section showlabel="true" showbar="true" locklevel="1" id="{1ed4c5d3-cc8a-4a85-b3c4-79bd6244074f}" IsUserDefined="0" height="auto">
+                      <labels>
+                        <label description="Notes" languagecode="1033" />
+                      </labels>
+                      <rows>
+                        <row>
+                          <cell colspan="2" showlabel="false" rowspan="5" auto="true">
+                            <labels>
+                              <label description="Note Text" languagecode="1033" />
+                            </labels>
+                            <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" />
+                          </cell>
+                        </row>
+                        <row />
+                        <row />
+                        <row />
+                        <row height="auto" />
+                      </rows>
+                    </section>
+                  </sections>
+                </tab>
+              </tabs>
+              <events>
+                <event name="onsave" application="false" active="true">
+                  <script><![CDATA[//          ___Discount Package 3.0___
+
+if( ((crmForm.all.new_parentaccountid == null)||(crmForm.all.new_parentaccountid.DataValue == null))
+  &amp;&amp; ((crmForm.all.new_customerdiscountgroupid == null)||(crmForm.all.new_customerdiscountgroupid.DataValue == null)))
+{
+   alert("Enter Customer information !");
+   event.returnValue=false;
+}
+
+if (((crmForm.all.new_relatedproductid == null)||(crmForm.all.new_relatedproductid.DataValue == null))
+&amp;&amp;((crmForm.all.new_productdiscountgroupid == null)||(crmForm.all.new_productdiscountgroupid.DataValue== null)))
+{
+  alert("Enter Product information !");
+  event.returnValue=false;
+}]]></script>
+                  <dependencies />
+                </event>
+                <event name="onload" application="false" active="true">
+                  <script><![CDATA[//                    ___Discount Package 3.0___
+
+//1__ Draw button to call _____LOOKUP  UOM______
+
+var uomFld = document.getElementById("new_uomname");
+if(uomFld  != null)
+uomFld.outerHTML = 
+'&lt;table width=\"100%\"&gt;&lt;tr&gt; &lt;td width=\"90%\" &gt;'+ uomFld.outerHTML+'&lt;/td&gt; &lt;td&gt;&lt;input type=button value=\"...\"  name=\"uom_viewer\" &gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;';
+
+var returnVal = "";
+var url = '/_controls/lookup/lookupsingle.aspx?objecttypes=1055&amp;browse=0';
+
+if(document.getElementById("uom_viewer") != null)
+{
+ document.getElementById("uom_viewer").onclick = function()
+ {              
+             returnVal = window.showModalDialog(url);
+             if(returnVal != null)
+                  crmForm.all.new_uomname.value = returnVal.items[0].keyValues["name"].value;
+ }
+}
+
+//2___ENABLED - DISABLED product/ customer fields
+
+ var productGroupFlag = crmForm.all.new_productgroupflag;
+ if(productGroupFlag != null)
+ {     
+    if(crmForm.FormType == 1)   crmForm.all.new_productgroupflag.DataValue = true;
+
+    if(crmForm.all.new_productdiscountgroupid != null)
+   {
+        if(crmForm.all.new_productgroupflag.DataValue)
+       {
+               crmForm.all.new_relatedproductid.disabled= false;
+               crmForm.all.new_productdiscountgroupid.disabled =true;
+               crmForm.all.new_productdiscountgroupid.DataValue = null;            
+        }
+       else
+       { 
+                 crmForm.all.new_relatedproductid.disabled= true;                      
+                 crmForm.all.new_productdiscountgroupid.disabled =false;
+                 crmForm.all.new_relatedproductid.DataValue = null;          
+       }
+   }
+
+ }
+
+ var customerGroupFlag = crmForm.all.new_customergroupflag;
+
+ if(customerGroupFlag != null)
+ {
+     if(crmForm.FormType == 1)  crmForm.all.new_customergroupflag.DataValue = true;
+
+    if(crmForm.all.new_customerdiscountgroupid != null) 
+    { 
+       if (customerGroupFlag.DataValue)
+      {
+            crmForm.all.new_parentaccountid.disabled= false;
+            crmForm.all.new_customerdiscountgroupid.disabled =true;
+            crmForm.all.new_customerdiscountgroupid.DataValue = null;
+      }
+     else
+     { 
+            crmForm.all.new_parentaccountid.disabled= true;
+            crmForm.all.new_customerdiscountgroupid.disabled =false;
+            crmForm.all.new_parentaccountid.DataValue = null;
+      }
+   }
+
+ }]]></script>
+                  <dependencies />
+                </event>
+              </events>
+            </form>
+          </entity>
+          <entity name="new_saleslinesdiscount" objecttypecode="10001">
+            <form type="preview" id="{1706598e-55e0-4cc1-a080-704d4ee5b762}">
+              <tabs>
+                <tab verticallayout="true" id="{915fc94d-5dc2-4a5e-8501-52a39653931b}" IsUserDefined="1">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <sections>
+                    <section showlabel="false" showbar="false" IsUserDefined="1" id="{53d77532-be63-4763-8d32-f9ac3cb71105}">
+                      <labels>
+                        <label description="Information" languagecode="1033" />
+                      </labels>
+                      <rows />
+                    </section>
+                  </sections>
+                </tab>
+              </tabs>
+            </form>
+          </entity>
+        </forms>
+      </FormXml>
+      <SavedQueries>
+        <savedqueries entity="SavedQuery" morerecords="0" paging-cookie="" version="3.0">
+          <savedquery>
+            <columnsetxml>
+              <columnset>
+                <column>new_name</column>
+                <column>createdon</column>
+                <ascend>new_name</ascend>
+              </columnset>
+            </columnsetxml>
+            <iscustomizable name="No">0</iscustomizable>
+            <isquickfindquery name="No">0</isquickfindquery>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="new_saleslinesdiscount">
+                  <attribute name="new_name" />
+                  <order attribute="new_name" descending="false" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="0" />
+                  </filter>
+                  <attribute name="new_relatedproductid" />
+                  <attribute name="new_parentaccountid" />
+                  <attribute name="new_startingdate" />
+                  <attribute name="new_endingdate" />
+                  <attribute name="new_discountpercents" />
+                  <attribute name="new_uomname" />
+                  <attribute name="new_productdiscountgroupid" />
+                  <attribute name="new_customerdiscountgroupid" />
+                  <attribute name="new_minimumquantity" />
+                  <attribute name="new_saleslinesdiscountid" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <isuserdefined name="Yes">1</isuserdefined>
+            <isdefault name="Yes">1</isdefault>
+            <returnedtypecode formattedvalue="10,001">10001</returnedtypecode>
+            <savedqueryid>{56D820B8-4798-451C-9934-42BC19F0F213}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" object="10001" jump="new_name" select="1" icon="1" preview="1">
+                <row name="result" id="new_saleslinesdiscountid">
+                  <cell name="new_name" width="150" />
+                  <cell name="new_discountpercents" width="100" />
+                  <cell name="new_minimumquantity" width="100" />
+                  <cell name="new_parentaccountid" width="100" />
+                  <cell name="new_customerdiscountgroupid" width="100" />
+                  <cell name="new_relatedproductid" width="100" />
+                  <cell name="new_uomname" width="100" />
+                  <cell name="new_productdiscountgroupid" width="100" />
+                  <cell name="new_startingdate" width="100" />
+                  <cell name="new_endingdate" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="0">0</querytype>
+            <name>Active CRM_SalesLinesDiscount</name>
+          </savedquery>
+          <savedquery>
+            <iscustomizable name="Yes">1</iscustomizable>
+            <isquickfindquery name="No">0</isquickfindquery>
+            <fetchxml>
+              <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+                <entity name="new_saleslinesdiscount">
+                  <order attribute="new_name" descending="false" />
+                  <filter type="and">
+                    <filter type="and">
+                      <filter type="or">
+                        <filter type="and">
+                          <condition attribute="new_productdiscountgroupid" operator="null" />
+                          <condition attribute="new_relatedproductid" operator="not-null" />
+                        </filter>
+                        <filter type="and">
+                          <condition attribute="new_productdiscountgroupid" operator="not-null" />
+                          <condition attribute="new_relatedproductid" operator="null" />
+                        </filter>
+                      </filter>
+                      <filter type="or">
+                        <filter type="and">
+                          <condition attribute="new_parentaccountid" operator="null" />
+                          <condition attribute="new_customerdiscountgroupid" operator="not-null" />
+                        </filter>
+                        <filter type="and">
+                          <condition attribute="new_customerdiscountgroupid" operator="null" />
+                          <condition attribute="new_parentaccountid" operator="not-null" />
+                        </filter>
+                      </filter>
+                      <condition attribute="new_uomname" operator="not-null" />
+                    </filter>
+                  </filter>
+                  <attribute name="new_name" />
+                  <attribute name="new_uomname" />
+                  <attribute name="new_startingdate" />
+                  <attribute name="new_relatedproductid" />
+                  <attribute name="new_productdiscountgroupid" />
+                  <attribute name="new_parentaccountid" />
+                  <attribute name="new_endingdate" />
+                  <attribute name="new_discountpercents" />
+                  <attribute name="new_customerdiscountgroupid" />
+                  <attribute name="new_saleslinesdiscountid" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <isdefault name="No">0</isdefault>
+            <returnedtypecode formattedvalue="10,001">10001</returnedtypecode>
+            <savedqueryid>{90C0A856-EB94-DB11-AEE4-0003FF5968EA}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" object="10001" jump="new_name" select="1" preview="1" icon="1">
+                <row name="result" id="new_saleslinesdiscountid">
+                  <cell name="new_name" width="150" />
+                  <cell name="new_discountpercents" width="100" />
+                  <cell name="new_relatedproductid" width="100" />
+                  <cell name="new_productdiscountgroupid" width="100" />
+                  <cell name="new_uomname" width="100" />
+                  <cell name="new_parentaccountid" width="100" />
+                  <cell name="new_customerdiscountgroupid" width="100" />
+                  <cell name="new_startingdate" width="100" />
+                  <cell name="new_endingdate" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="0">0</querytype>
+            <name>Filtered View</name>
+          </savedquery>
+          <savedquery>
+            <columnsetxml>
+              <columnset>
+                <column>new_name</column>
+                <column>createdon</column>
+                <ascend>new_name</ascend>
+              </columnset>
+            </columnsetxml>
+            <iscustomizable name="No">0</iscustomizable>
+            <isquickfindquery name="No">0</isquickfindquery>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="new_saleslinesdiscount">
+                  <attribute name="new_name" />
+                  <order attribute="new_discountpercents" descending="false" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="1" />
+                  </filter>
+                  <attribute name="new_relatedproductid" />
+                  <attribute name="new_productdiscountgroupid" />
+                  <attribute name="new_parentaccountid" />
+                  <attribute name="new_discountpercents" />
+                  <attribute name="new_customerdiscountgroupid" />
+                  <attribute name="new_startingdate" />
+                  <attribute name="new_endingdate" />
+                  <attribute name="new_uomname" />
+                  <attribute name="new_saleslinesdiscountid" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <isuserdefined name="Yes">1</isuserdefined>
+            <isdefault name="No">0</isdefault>
+            <returnedtypecode formattedvalue="10,001">10001</returnedtypecode>
+            <savedqueryid>{AF94328F-86F7-4BDA-B47A-A3FC1064635D}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" object="10001" jump="new_name" select="1" icon="1" preview="1">
+                <row name="result" id="new_saleslinesdiscountid">
+                  <cell name="new_name" width="100" />
+                  <cell name="new_discountpercents" width="100" />
+                  <cell name="new_parentaccountid" width="100" />
+                  <cell name="new_customerdiscountgroupid" width="150" />
+                  <cell name="new_relatedproductid" width="100" />
+                  <cell name="new_uomname" width="100" />
+                  <cell name="new_productdiscountgroupid" width="100" />
+                  <cell name="new_endingdate" width="100" />
+                  <cell name="new_startingdate" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="0">0</querytype>
+            <name>Inactive CRM_SalesLinesDiscount</name>
+          </savedquery>
+          <savedquery>
+            <columnsetxml>
+              <columnset>
+                <column>new_name</column>
+                <column>createdon</column>
+                <ascend>new_name</ascend>
+              </columnset>
+            </columnsetxml>
+            <iscustomizable name="No">0</iscustomizable>
+            <isquickfindquery name="No">0</isquickfindquery>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="new_saleslinesdiscount">
+                  <attribute name="new_name" />
+                  <order attribute="new_name" descending="false" />
+                  <attribute name="new_uomname" />
+                  <attribute name="new_startingdate" />
+                  <attribute name="new_relatedproductid" />
+                  <attribute name="new_parentaccountid" />
+                  <attribute name="new_endingdate" />
+                  <attribute name="new_discountpercents" />
+                  <attribute name="new_productdiscountgroupid" />
+                  <attribute name="new_customerdiscountgroupid" />
+                  <attribute name="new_minimumquantity" />
+                  <attribute name="new_saleslinesdiscountid" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <isuserdefined name="Yes">1</isuserdefined>
+            <isdefault name="Yes">1</isdefault>
+            <returnedtypecode formattedvalue="10,001">10001</returnedtypecode>
+            <savedqueryid>{583F8F3A-7068-493D-83E4-28E9735C0687}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" object="10001" jump="new_name" select="1" icon="1" preview="1">
+                <row name="result" id="new_saleslinesdiscountid">
+                  <cell name="new_name" width="100" />
+                  <cell name="new_discountpercents" width="100" />
+                  <cell name="new_relatedproductid" width="100" />
+                  <cell name="new_uomname" width="100" />
+                  <cell name="new_productdiscountgroupid" width="100" />
+                  <cell name="new_parentaccountid" width="100" />
+                  <cell name="new_customerdiscountgroupid" width="100" />
+                  <cell name="new_minimumquantity" width="100" />
+                  <cell name="new_startingdate" width="100" />
+                  <cell name="new_endingdate" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="1">1</querytype>
+            <name>Sales Lines Discount Advanced Find View</name>
+          </savedquery>
+          <savedquery>
+            <columnsetxml>
+              <columnset version="3.0">
+                <column>new_relatedproductid</column>
+                <column>new_discountpercents</column>
+                <column>new_name</column>
+                <column>new_saleslinesdiscountid</column>
+                <ascend>new_name</ascend>
+              </columnset>
+            </columnsetxml>
+            <iscustomizable name="No">0</iscustomizable>
+            <isquickfindquery name="No">0</isquickfindquery>
+            <isuserdefined name="Yes">1</isuserdefined>
+            <isdefault name="Yes">1</isdefault>
+            <returnedtypecode formattedvalue="10,001">10001</returnedtypecode>
+            <savedqueryid>{6B0DC2B6-E730-4B27-B6DE-DB56ECC8001E}</savedqueryid>
+            <queryapi>AUTO</queryapi>
+            <layoutxml>
+              <grid name="new_saleslinesdiscounts" object="10001" jump="new_name" select="1" icon="1" preview="1">
+                <row name="new_saleslinesdiscount" id="new_saleslinesdiscountid">
+                  <cell name="new_name" width="100" />
+                  <cell name="new_discountpercents" width="100" />
+                  <cell name="new_relatedproductid" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="2">2</querytype>
+            <name>Sales Lines Discount Associated View</name>
+          </savedquery>
+          <savedquery>
+            <columnsetxml>
+              <columnset>
+                <column>new_name</column>
+                <column>createdon</column>
+                <ascend>new_name</ascend>
+              </columnset>
+            </columnsetxml>
+            <iscustomizable name="No">0</iscustomizable>
+            <isquickfindquery name="Yes">1</isquickfindquery>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="new_saleslinesdiscount">
+                  <attribute name="new_name" />
+                  <order attribute="new_discountpercents" descending="false" />
+                  <filter type="or" isquickfindfields="1">
+                    <condition attribute="new_name" operator="like" value="{0}" />
+                  </filter>
+                  <attribute name="new_relatedproductid" />
+                  <attribute name="new_discountpercents" />
+                  <attribute name="new_uomname" />
+                  <attribute name="new_startingdate" />
+                  <attribute name="new_productdiscountgroupid" />
+                  <attribute name="new_parentaccountid" />
+                  <attribute name="new_endingdate" />
+                  <attribute name="new_customerdiscountgroupid" />
+                  <attribute name="new_minimumquantity" />
+                  <attribute name="new_saleslinesdiscountid" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <isuserdefined name="Yes">1</isuserdefined>
+            <isdefault name="Yes">1</isdefault>
+            <returnedtypecode formattedvalue="10,001">10001</returnedtypecode>
+            <savedqueryid>{2592F365-064B-4F7C-B281-33F3BADB7886}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" object="10001" jump="new_name" select="1" icon="1" preview="1">
+                <row name="result" id="new_saleslinesdiscountid">
+                  <cell name="new_name" width="100" />
+                  <cell name="new_discountpercents" width="100" />
+                  <cell name="new_minimumquantity" width="100" />
+                  <cell name="new_parentaccountid" width="100" />
+                  <cell name="new_customerdiscountgroupid" width="100" />
+                  <cell name="new_relatedproductid" width="100" />
+                  <cell name="new_uomname" width="100" />
+                  <cell name="new_productdiscountgroupid" width="100" />
+                  <cell name="new_startingdate" width="100" />
+                  <cell name="new_endingdate" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="4">4</querytype>
+            <name>Quick Find Active CRM_SalesLinesDiscount</name>
+          </savedquery>
+          <savedquery>
+            <columnsetxml>
+              <columnset>
+                <column>new_name</column>
+                <column>createdon</column>
+                <ascend>new_name</ascend>
+              </columnset>
+            </columnsetxml>
+            <iscustomizable name="No">0</iscustomizable>
+            <isquickfindquery name="No">0</isquickfindquery>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="new_saleslinesdiscount">
+                  <attribute name="new_saleslinesdiscountid" />
+                  <attribute name="new_name" />
+                  <filter type="or" isquickfindfields="1">
+                    <condition attribute="new_name" operator="like" value="{0}" />
+                  </filter>
+                  <order attribute="new_discountpercents" descending="true" />
+                  <attribute name="new_uomname" />
+                  <attribute name="new_startingdate" />
+                  <attribute name="new_relatedproductid" />
+                  <attribute name="new_parentaccountid" />
+                  <attribute name="new_endingdate" />
+                  <attribute name="new_discountpercents" />
+                  <attribute name="new_productdiscountgroupid" />
+                  <attribute name="new_customerdiscountgroupid" />
+                  <attribute name="new_minimumquantity" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <isuserdefined name="Yes">1</isuserdefined>
+            <isdefault name="Yes">1</isdefault>
+            <returnedtypecode formattedvalue="10,001">10001</returnedtypecode>
+            <savedqueryid>{00FF17E2-0141-4945-9E24-E655717A8CD5}</savedqueryid>
+            <layoutxml>
+              <grid name="new_saleslinesdiscounts" object="10001" jump="new_name" select="1" icon="1" preview="0">
+                <row name="new_saleslinesdiscount" id="new_saleslinesdiscountid">
+                  <cell name="new_name" width="125" />
+                  <cell name="new_discountpercents" width="100" />
+                  <cell name="new_minimumquantity" width="100" />
+                  <cell name="new_relatedproductid" width="100" />
+                  <cell name="new_uomname" width="100" />
+                  <cell name="new_productdiscountgroupid" width="100" />
+                  <cell name="new_parentaccountid" width="100" />
+                  <cell name="new_customerdiscountgroupid" width="125" />
+                  <cell name="new_startingdate" width="100" />
+                  <cell name="new_endingdate" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="64">64</querytype>
+            <name>Sales Lines Discount Lookup View</name>
+          </savedquery>
+        </savedqueries>
+      </SavedQueries>
+      <Icons />
+    </Entity>
+    <Entity>
+      <Name LocalizedName="CustomerDiscountGroup" OriginalName="CustomerDiscountGroup">New_CustomerDiscountGroup</Name>
+      <ObjectTypeCode>10003</ObjectTypeCode>
+      <LocalizedName>CustomerDiscountGroup</LocalizedName>
+      <LocalizedCollectionName>CustomerDiscountGroup</LocalizedCollectionName>
+      <EntityInfo>
+        <entity Name="New_CustomerDiscountGroup">
+          <HasRelatedNotes>True</HasRelatedNotes>
+          <HasRelatedActivities>True</HasRelatedActivities>
+          <ObjectTypeCode>10003</ObjectTypeCode>
+          <BaseTableName>New_CustomerDiscountGroupBase</BaseTableName>
+          <WorkflowEventMask>-1</WorkflowEventMask>
+          <IsCustomizable>1</IsCustomizable>
+          <IsMappable>1</IsMappable>
+          <OwnershipTypeMask>UserOwned</OwnershipTypeMask>
+          <IsAudited>1</IsAudited>
+          <EntityMask>ActivityPointer</EntityMask>
+          <IsReplicated>1</IsReplicated>
+          <IsReplicationUserFiltered>1</IsReplicationUserFiltered>
+          <IsCustomEntity>1</IsCustomEntity>
+          <LocalizedName>CustomerDiscountGroup</LocalizedName>
+          <LocalizedCollectionName>CustomerDiscountGroup</LocalizedCollectionName>
+          <Description />
+          <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+          <ExtensionTableName>New_CustomerDiscountGroupExtensionBase</ExtensionTableName>
+          <ReportViewName>FilteredNew_CustomerDiscountGroup</ReportViewName>
+          <IsRenameable>1</IsRenameable>
+          <attributes>
+            <attribute PhysicalName="CreatedBy">
+              <Type>lookup</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ReferencedEntityObjectTypeCode>8</ReferencedEntityObjectTypeCode>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Unique identifier of the user who created the record.</Description>
+            </attribute>
+            <attribute PhysicalName="CreatedOn">
+              <Type>datetime</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Date and time when the record was created.</Description>
+            </attribute>
+            <attribute PhysicalName="DeletionStateCode">
+              <Type>int</Type>
+            </attribute>
+            <attribute PhysicalName="ModifiedBy">
+              <Type>lookup</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ReferencedEntityObjectTypeCode>8</ReferencedEntityObjectTypeCode>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Unique identifier of the user who modified the record.</Description>
+            </attribute>
+            <attribute PhysicalName="ModifiedOn">
+              <Type>datetime</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Date and time when the record was modified.</Description>
+            </attribute>
+            <attribute PhysicalName="New_CustomerDiscountGroupId">
+              <Type>primarykey</Type>
+              <IsNullable>0</IsNullable>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsPKAttribute>1</IsPKAttribute>
+              <DisplayMask>ValidForAdvancedFind|RequiredForGrid</DisplayMask>
+              <Description>Unique identifier for entity instances</Description>
+            </attribute>
+            <attribute PhysicalName="New_name">
+              <Type>nvarchar</Type>
+              <Length>200</Length>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsCustomField>1</IsCustomField>
+              <DisplayMask>ActivityPointerRegardingName|PrimaryName|ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>The name of the custom entity.</Description>
+            </attribute>
+            <attribute PhysicalName="OwnerId">
+              <Type>owner</Type>
+              <IsNullable>0</IsNullable>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsLogical>1</IsLogical>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Owner Id</Description>
+            </attribute>
+            <attribute PhysicalName="OwnerIdDsc">
+              <Type>int</Type>
+              <IsNullable>0</IsNullable>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsLogical>1</IsLogical>
+              <AttributeOf>OwnerId</AttributeOf>
+              <XmlAbbreviation>dsc</XmlAbbreviation>
+              <Description />
+            </attribute>
+            <attribute PhysicalName="OwnerIdName">
+              <Type>nvarchar</Type>
+              <Length>320</Length>
+              <IsNullable>0</IsNullable>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsLogical>1</IsLogical>
+              <AttributeOf>OwnerId</AttributeOf>
+              <XmlAbbreviation>name</XmlAbbreviation>
+              <IsSortAttribute>1</IsSortAttribute>
+              <Description>Name of the owner</Description>
+            </attribute>
+            <attribute PhysicalName="OwnerIdType">
+              <Type>int</Type>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsLogical>1</IsLogical>
+              <DisplayMask>ObjectTypeCode</DisplayMask>
+              <AttributeOf>OwnerId</AttributeOf>
+              <XmlAbbreviation>type</XmlAbbreviation>
+              <Description>Owner Id Type</Description>
+            </attribute>
+            <attribute PhysicalName="OwningBusinessUnit">
+              <Type>lookup</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ReferencedEntityObjectTypeCode>10</ReferencedEntityObjectTypeCode>
+              <Description>Unique identifier for the business unit that owns the record</Description>
+            </attribute>
+            <attribute PhysicalName="OwningUser">
+              <Type>lookup</Type>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ReferencedEntityObjectTypeCode>8</ReferencedEntityObjectTypeCode>
+              <AggregateOf>OwnerId</AggregateOf>
+              <Description>Unique identifier for the user that owns the record.</Description>
+            </attribute>
+            <attribute PhysicalName="StateCode">
+              <Type>state</Type>
+              <IsNullable>0</IsNullable>
+              <ValidForReadApi>1</ValidForReadApi>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Status of the CustomerDiscountGroup</Description>
+            </attribute>
+            <attribute PhysicalName="statecodeName">
+              <Type>virtual</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsLogical>1</IsLogical>
+              <AttributeOf>StateCode</AttributeOf>
+              <XmlAbbreviation>name</XmlAbbreviation>
+            </attribute>
+            <attribute PhysicalName="StatusCode">
+              <Type>status</Type>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Reason for the status of the CustomerDiscountGroup</Description>
+            </attribute>
+            <attribute PhysicalName="statuscodeName">
+              <Type>virtual</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsLogical>1</IsLogical>
+              <AttributeOf>StatusCode</AttributeOf>
+              <XmlAbbreviation>name</XmlAbbreviation>
+            </attribute>
+            <attribute PhysicalName="VersionNumber">
+              <Type>timestamp</Type>
+            </attribute>
+          </attributes>
+        </entity>
+      </EntityInfo>
+      <FieldXml>
+        <entity name="new_customerdiscountgroup" objecttypecode="10003">
+          <fields>
+            <field name="new_customerdiscountgroupid" requiredlevel="na">
+              <displaynames>
+                <displayname description="CustomerDiscountGroup" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="createdon" requiredlevel="na" format="date">
+              <displaynames>
+                <displayname description="Created On" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="createdby" requiredlevel="na" lookupclass="SystemUsers" lookupstyle="single">
+              <displaynames>
+                <displayname description="Created By" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="modifiedon" requiredlevel="na" format="date">
+              <displaynames>
+                <displayname description="Modified On" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="modifiedby" requiredlevel="na" lookupclass="SystemUsers" lookupstyle="single">
+              <displaynames>
+                <displayname description="Modified By" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="ownerid" requiredlevel="na">
+              <displaynames>
+                <displayname description="Owner" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="owningbusinessunit" requiredlevel="na">
+              <displaynames>
+                <displayname description="Owning Business Unit" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="statecode" requiredlevel="na">
+              <displaynames>
+                <displayname description="Status" languagecode="1033" />
+              </displaynames>
+              <states nextvalue="0">
+                <state value="0" defaultstatus="1" invariantname="Active">
+                  <labels>
+                    <label description="Active" languagecode="1033" />
+                  </labels>
+                </state>
+                <state value="1" defaultstatus="2" invariantname="Inactive">
+                  <labels>
+                    <label description="Inactive" languagecode="1033" />
+                  </labels>
+                </state>
+              </states>
+            </field>
+            <field name="statuscode" requiredlevel="na">
+              <displaynames>
+                <displayname description="Status Reason" languagecode="1033" />
+              </displaynames>
+              <statuses nextvalue="3">
+                <status value="1" state="0">
+                  <labels>
+                    <label description="Active" languagecode="1033" />
+                  </labels>
+                </status>
+                <status value="2" state="1">
+                  <labels>
+                    <label description="Inactive" languagecode="1033" />
+                  </labels>
+                </status>
+              </statuses>
+            </field>
+            <field name="new_name" requiredlevel="required" maxlength="100" format="text">
+              <displaynames>
+                <displayname description="Name" languagecode="1033" />
+              </displaynames>
+            </field>
+          </fields>
+        </entity>
+      </FieldXml>
+      <FormXml>
+        <forms>
+          <entity name="new_customerdiscountgroup" objecttypecode="10003">
+            <form type="main" id="{0183b82a-1492-44a9-a6dd-be6d440f09a0}">
+              <tabs>
+                <tab verticallayout="true" id="{6231aeaa-4ef6-4cdb-b7b5-1e36ced4456e}" IsUserDefined="1">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <sections>
+                    <section showlabel="false" showbar="false" IsUserDefined="0" id="{16ad715b-4dbc-4f3a-8fe1-4f2c646a10ea}">
+                      <labels>
+                        <label description="General" languagecode="1033" />
+                      </labels>
+                      <rows>
+                        <row>
+                          <cell>
+                            <labels>
+                              <label description="Name" languagecode="1033" />
+                            </labels>
+                            <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" />
+                          </cell>
+                          <cell showlabel="true" rowspan="1" colspan="1">
+                            <labels />
+                          </cell>
+                        </row>
+                      </rows>
+                    </section>
+                  </sections>
+                </tab>
+                <tab id="{e098556b-2790-db11-afb0-0003ff5968ea}" IsUserDefined="1" locklevel="0">
+                  <labels>
+                    <label description="Administration" languagecode="1033" />
+                  </labels>
+                  <sections>
+                    <section showlabel="false" showbar="false" locklevel="0" id="{7062de9b-2790-db11-afb0-0003ff5968ea}" IsUserDefined="1" layout="varwidth" columns="11">
+                      <labels>
+                        <label description="General" languagecode="1033" />
+                      </labels>
+                      <rows>
+                        <row>
+                          <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1">
+                            <labels>
+                              <label description="Owner" languagecode="1033" />
+                            </labels>
+                            <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                          </cell>
+                          <cell showlabel="true" colspan="1">
+                            <labels />
+                          </cell>
+                        </row>
+                      </rows>
+                    </section>
+                  </sections>
+                </tab>
+                <tab id="{1865aa44-b4a0-4cae-934b-5bf5a407e1cc}" IsUserDefined="0">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <sections>
+                    <section showlabel="true" showbar="true" locklevel="1" id="{f348fe31-d200-43f6-95db-ca9c597bf1f8}" IsUserDefined="0" height="auto">
+                      <labels>
+                        <label description="Notes" languagecode="1033" />
+                      </labels>
+                      <rows>
+                        <row>
+                          <cell colspan="2" showlabel="false" rowspan="5" auto="true">
+                            <labels>
+                              <label description="Note Text" languagecode="1033" />
+                            </labels>
+                            <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" />
+                          </cell>
+                        </row>
+                        <row />
+                        <row />
+                        <row />
+                        <row height="auto" />
+                      </rows>
+                    </section>
+                  </sections>
+                </tab>
+              </tabs>
+            </form>
+          </entity>
+          <entity name="new_customerdiscountgroup" objecttypecode="10003">
+            <form type="preview" id="{1fdeb2a5-f752-4b05-a94f-613cfd7216e2}">
+              <tabs>
+                <tab verticallayout="true" id="{18c0465e-0aed-4b92-adfd-fe1038870650}" IsUserDefined="1">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <sections>
+                    <section showlabel="false" showbar="false" IsUserDefined="1" id="{b7e4d36f-abed-4633-8484-88b462c4b1bd}">
+                      <labels>
+                        <label description="Information" languagecode="1033" />
+                      </labels>
+                      <rows />
+                    </section>
+                  </sections>
+                </tab>
+              </tabs>
+            </form>
+          </entity>
+        </forms>
+      </FormXml>
+      <SavedQueries>
+        <savedqueries entity="SavedQuery" morerecords="0" paging-cookie="" version="3.0">
+          <savedquery>
+            <columnsetxml>
+              <columnset>
+                <column>new_name</column>
+                <column>createdon</column>
+                <ascend>new_name</ascend>
+              </columnset>
+            </columnsetxml>
+            <iscustomizable name="No">0</iscustomizable>
+            <isquickfindquery name="No">0</isquickfindquery>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="new_customerdiscountgroup">
+                  <attribute name="new_name" />
+                  <order attribute="new_name" descending="false" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="0" />
+                  </filter>
+                  <attribute name="new_customerdiscountgroupid" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <isuserdefined name="Yes">1</isuserdefined>
+            <isdefault name="Yes">1</isdefault>
+            <returnedtypecode formattedvalue="10,003">10003</returnedtypecode>
+            <savedqueryid>{3E5B8435-5E1E-4ED4-913D-50DEA0F49D86}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" object="10003" jump="new_name" select="1" icon="1" preview="1">
+                <row name="result" id="new_customerdiscountgroupid">
+                  <cell name="new_name" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="0">0</querytype>
+            <name>Active CustomerDiscountGroup</name>
+          </savedquery>
+          <savedquery>
+            <columnsetxml>
+              <columnset>
+                <column>new_name</column>
+                <column>createdon</column>
+                <ascend>new_name</ascend>
+              </columnset>
+            </columnsetxml>
+            <iscustomizable name="No">0</iscustomizable>
+            <isquickfindquery name="No">0</isquickfindquery>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="new_customerdiscountgroup">
+                  <attribute name="new_name" />
+                  <order attribute="new_name" descending="false" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="1" />
+                  </filter>
+                  <attribute name="new_customerdiscountgroupid" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <isuserdefined name="Yes">1</isuserdefined>
+            <isdefault name="No">0</isdefault>
+            <returnedtypecode formattedvalue="10,003">10003</returnedtypecode>
+            <savedqueryid>{0DC2E960-8001-43F4-ABC6-A00184FBAE99}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" object="10003" jump="new_name" select="1" icon="1" preview="1">
+                <row name="result" id="new_customerdiscountgroupid">
+                  <cell name="new_name" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="0">0</querytype>
+            <name>Inactive CustomerDiscountGroup</name>
+          </savedquery>
+          <savedquery>
+            <columnsetxml>
+              <columnset>
+                <column>new_name</column>
+                <column>createdon</column>
+                <ascend>new_name</ascend>
+              </columnset>
+            </columnsetxml>
+            <iscustomizable name="No">0</iscustomizable>
+            <isquickfindquery name="No">0</isquickfindquery>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="new_customerdiscountgroup">
+                  <attribute name="new_name" />
+                  <order attribute="new_name" descending="false" />
+                  <attribute name="new_customerdiscountgroupid" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <isuserdefined name="Yes">1</isuserdefined>
+            <isdefault name="Yes">1</isdefault>
+            <returnedtypecode formattedvalue="10,003">10003</returnedtypecode>
+            <savedqueryid>{4CE2EB70-1F35-468B-B32D-D5AF27F83A2A}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" object="10003" jump="new_name" select="1" icon="1" preview="1">
+                <row name="result" id="new_customerdiscountgroupid">
+                  <cell name="new_name" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="1">1</querytype>
+            <name>CustomerDiscountGroup Advanced Find View</name>
+          </savedquery>
+          <savedquery>
+            <columnsetxml>
+              <columnset version="3.0">
+                <column>new_name</column>
+                <column>new_customerdiscountgroupid</column>
+                <ascend>new_name</ascend>
+              </columnset>
+            </columnsetxml>
+            <iscustomizable name="No">0</iscustomizable>
+            <isquickfindquery name="No">0</isquickfindquery>
+            <isuserdefined name="Yes">1</isuserdefined>
+            <isdefault name="Yes">1</isdefault>
+            <returnedtypecode formattedvalue="10,003">10003</returnedtypecode>
+            <savedqueryid>{8D112F21-87EE-4873-898E-545A1C7D75E9}</savedqueryid>
+            <queryapi>AUTO</queryapi>
+            <layoutxml>
+              <grid name="new_customerdiscountgroups" object="10003" jump="new_name" select="1" icon="1" preview="1">
+                <row name="new_customerdiscountgroup" id="new_customerdiscountgroupid">
+                  <cell name="new_name" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="2">2</querytype>
+            <name>CustomerDiscountGroup Associated View</name>
+          </savedquery>
+          <savedquery>
+            <columnsetxml>
+              <columnset>
+                <column>new_name</column>
+                <column>createdon</column>
+                <ascend>new_name</ascend>
+              </columnset>
+            </columnsetxml>
+            <iscustomizable name="No">0</iscustomizable>
+            <isquickfindquery name="Yes">1</isquickfindquery>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="new_customerdiscountgroup">
+                  <attribute name="new_name" />
+                  <order attribute="new_name" descending="false" />
+                  <filter type="or" isquickfindfields="1">
+                    <condition attribute="new_name" operator="like" value="{0}" />
+                  </filter>
+                  <attribute name="new_customerdiscountgroupid" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <isuserdefined name="Yes">1</isuserdefined>
+            <isdefault name="Yes">1</isdefault>
+            <returnedtypecode formattedvalue="10,003">10003</returnedtypecode>
+            <savedqueryid>{3C10C8AA-B9D4-4886-9C97-08E88B90BDB2}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" object="10003" jump="new_name" select="1" icon="1" preview="1">
+                <row name="result" id="new_customerdiscountgroupid">
+                  <cell name="new_name" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="4">4</querytype>
+            <name>Quick Find Active CustomerDiscountGroup</name>
+          </savedquery>
+          <savedquery>
+            <columnsetxml>
+              <columnset>
+                <column>new_name</column>
+                <column>createdon</column>
+                <ascend>new_name</ascend>
+              </columnset>
+            </columnsetxml>
+            <iscustomizable name="No">0</iscustomizable>
+            <isquickfindquery name="No">0</isquickfindquery>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="new_customerdiscountgroup">
+                  <attribute name="new_customerdiscountgroupid" />
+                  <attribute name="new_name" />
+                  <filter type="or" isquickfindfields="1">
+                    <condition attribute="new_name" operator="like" value="{0}" />
+                  </filter>
+                  <order attribute="new_name" descending="false" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <isuserdefined name="Yes">1</isuserdefined>
+            <isdefault name="Yes">1</isdefault>
+            <returnedtypecode formattedvalue="10,003">10003</returnedtypecode>
+            <savedqueryid>{EB348D17-2C60-4FF1-A39D-F2F0DE3BC90C}</savedqueryid>
+            <layoutxml>
+              <grid name="new_customerdiscountgroups" object="10003" jump="new_name" select="1" icon="1" preview="0">
+                <row name="new_customerdiscountgroup" id="new_customerdiscountgroupid">
+                  <cell name="new_name" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="64">64</querytype>
+            <name>CustomerDiscountGroup Lookup View</name>
+          </savedquery>
+        </savedqueries>
+      </SavedQueries>
+      <Icons />
+    </Entity>
+    <Entity>
+      <Name LocalizedName="ProductDiscountGroup" OriginalName="ProductDiscountGroup">New_ProductDiscountGroup</Name>
+      <ObjectTypeCode>10002</ObjectTypeCode>
+      <LocalizedName>ProductDiscountGroup</LocalizedName>
+      <LocalizedCollectionName>ProductDiscountGroup</LocalizedCollectionName>
+      <EntityInfo>
+        <entity Name="New_ProductDiscountGroup">
+          <HasRelatedNotes>True</HasRelatedNotes>
+          <HasRelatedActivities>True</HasRelatedActivities>
+          <ObjectTypeCode>10002</ObjectTypeCode>
+          <BaseTableName>New_ProductDiscountGroupBase</BaseTableName>
+          <WorkflowEventMask>-1</WorkflowEventMask>
+          <IsCustomizable>1</IsCustomizable>
+          <IsMappable>1</IsMappable>
+          <OwnershipTypeMask>UserOwned</OwnershipTypeMask>
+          <IsAudited>1</IsAudited>
+          <EntityMask>ActivityPointer</EntityMask>
+          <IsReplicated>1</IsReplicated>
+          <IsReplicationUserFiltered>1</IsReplicationUserFiltered>
+          <IsCustomEntity>1</IsCustomEntity>
+          <LocalizedName>ProductDiscountGroup</LocalizedName>
+          <LocalizedCollectionName>ProductDiscountGroup</LocalizedCollectionName>
+          <Description />
+          <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+          <ExtensionTableName>New_ProductDiscountGroupExtensionBase</ExtensionTableName>
+          <ReportViewName>FilteredNew_ProductDiscountGroup</ReportViewName>
+          <IsRenameable>1</IsRenameable>
+          <attributes>
+            <attribute PhysicalName="CreatedBy">
+              <Type>lookup</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ReferencedEntityObjectTypeCode>8</ReferencedEntityObjectTypeCode>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Unique identifier of the user who created the record.</Description>
+            </attribute>
+            <attribute PhysicalName="CreatedOn">
+              <Type>datetime</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Date and time when the record was created.</Description>
+            </attribute>
+            <attribute PhysicalName="DeletionStateCode">
+              <Type>int</Type>
+            </attribute>
+            <attribute PhysicalName="ModifiedBy">
+              <Type>lookup</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ReferencedEntityObjectTypeCode>8</ReferencedEntityObjectTypeCode>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Unique identifier of the user who modified the record.</Description>
+            </attribute>
+            <attribute PhysicalName="ModifiedOn">
+              <Type>datetime</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Date and time when the record was modified.</Description>
+            </attribute>
+            <attribute PhysicalName="New_name">
+              <Type>nvarchar</Type>
+              <Length>200</Length>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsCustomField>1</IsCustomField>
+              <DisplayMask>ActivityPointerRegardingName|PrimaryName|ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>The name of the custom entity.</Description>
+            </attribute>
+            <attribute PhysicalName="New_ProductDiscountGroupId">
+              <Type>primarykey</Type>
+              <IsNullable>0</IsNullable>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsPKAttribute>1</IsPKAttribute>
+              <DisplayMask>ValidForAdvancedFind|RequiredForGrid</DisplayMask>
+              <Description>Unique identifier for entity instances</Description>
+            </attribute>
+            <attribute PhysicalName="OwnerId">
+              <Type>owner</Type>
+              <IsNullable>0</IsNullable>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsLogical>1</IsLogical>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Owner Id</Description>
+            </attribute>
+            <attribute PhysicalName="OwnerIdDsc">
+              <Type>int</Type>
+              <IsNullable>0</IsNullable>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsLogical>1</IsLogical>
+              <AttributeOf>OwnerId</AttributeOf>
+              <XmlAbbreviation>dsc</XmlAbbreviation>
+              <Description />
+            </attribute>
+            <attribute PhysicalName="OwnerIdName">
+              <Type>nvarchar</Type>
+              <Length>320</Length>
+              <IsNullable>0</IsNullable>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsLogical>1</IsLogical>
+              <AttributeOf>OwnerId</AttributeOf>
+              <XmlAbbreviation>name</XmlAbbreviation>
+              <IsSortAttribute>1</IsSortAttribute>
+              <Description>Name of the owner</Description>
+            </attribute>
+            <attribute PhysicalName="OwnerIdType">
+              <Type>int</Type>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsLogical>1</IsLogical>
+              <DisplayMask>ObjectTypeCode</DisplayMask>
+              <AttributeOf>OwnerId</AttributeOf>
+              <XmlAbbreviation>type</XmlAbbreviation>
+              <Description>Owner Id Type</Description>
+            </attribute>
+            <attribute PhysicalName="OwningBusinessUnit">
+              <Type>lookup</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ReferencedEntityObjectTypeCode>10</ReferencedEntityObjectTypeCode>
+              <Description>Unique identifier for the business unit that owns the record</Description>
+            </attribute>
+            <attribute PhysicalName="OwningUser">
+              <Type>lookup</Type>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ReferencedEntityObjectTypeCode>8</ReferencedEntityObjectTypeCode>
+              <AggregateOf>OwnerId</AggregateOf>
+              <Description>Unique identifier for the user that owns the record.</Description>
+            </attribute>
+            <attribute PhysicalName="StateCode">
+              <Type>state</Type>
+              <IsNullable>0</IsNullable>
+              <ValidForReadApi>1</ValidForReadApi>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Status of the ProductDiscountGroup</Description>
+            </attribute>
+            <attribute PhysicalName="statecodeName">
+              <Type>virtual</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsLogical>1</IsLogical>
+              <AttributeOf>StateCode</AttributeOf>
+              <XmlAbbreviation>name</XmlAbbreviation>
+            </attribute>
+            <attribute PhysicalName="StatusCode">
+              <Type>status</Type>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Reason for the status of the ProductDiscountGroup</Description>
+            </attribute>
+            <attribute PhysicalName="statuscodeName">
+              <Type>virtual</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsLogical>1</IsLogical>
+              <AttributeOf>StatusCode</AttributeOf>
+              <XmlAbbreviation>name</XmlAbbreviation>
+            </attribute>
+            <attribute PhysicalName="VersionNumber">
+              <Type>timestamp</Type>
+            </attribute>
+          </attributes>
+        </entity>
+      </EntityInfo>
+      <FieldXml>
+        <entity name="new_productdiscountgroup" objecttypecode="10002">
+          <fields>
+            <field name="new_productdiscountgroupid" requiredlevel="na">
+              <displaynames>
+                <displayname description="ProductDiscountGroup" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="createdon" requiredlevel="na" format="date">
+              <displaynames>
+                <displayname description="Created On" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="createdby" requiredlevel="na" lookupclass="SystemUsers" lookupstyle="single">
+              <displaynames>
+                <displayname description="Created By" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="modifiedon" requiredlevel="na" format="date">
+              <displaynames>
+                <displayname description="Modified On" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="modifiedby" requiredlevel="na" lookupclass="SystemUsers" lookupstyle="single">
+              <displaynames>
+                <displayname description="Modified By" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="ownerid" requiredlevel="na">
+              <displaynames>
+                <displayname description="Owner" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="owningbusinessunit" requiredlevel="na">
+              <displaynames>
+                <displayname description="Owning Business Unit" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="statecode" requiredlevel="na">
+              <displaynames>
+                <displayname description="Status" languagecode="1033" />
+              </displaynames>
+              <states nextvalue="0">
+                <state value="0" defaultstatus="1" invariantname="Active">
+                  <labels>
+                    <label description="Active" languagecode="1033" />
+                  </labels>
+                </state>
+                <state value="1" defaultstatus="2" invariantname="Inactive">
+                  <labels>
+                    <label description="Inactive" languagecode="1033" />
+                  </labels>
+                </state>
+              </states>
+            </field>
+            <field name="statuscode" requiredlevel="na">
+              <displaynames>
+                <displayname description="Status Reason" languagecode="1033" />
+              </displaynames>
+              <statuses nextvalue="3">
+                <status value="1" state="0">
+                  <labels>
+                    <label description="Active" languagecode="1033" />
+                  </labels>
+                </status>
+                <status value="2" state="1">
+                  <labels>
+                    <label description="Inactive" languagecode="1033" />
+                  </labels>
+                </status>
+              </statuses>
+            </field>
+            <field name="new_name" requiredlevel="required" maxlength="100" format="text">
+              <displaynames>
+                <displayname description="Name" languagecode="1033" />
+              </displaynames>
+            </field>
+          </fields>
+        </entity>
+      </FieldXml>
+      <FormXml>
+        <forms>
+          <entity name="new_productdiscountgroup" objecttypecode="10002">
+            <form type="main" id="{b4b781c5-c9fc-44e6-923b-a4d7ae25c35c}">
+              <tabs>
+                <tab verticallayout="true" id="{833a23d5-b4cf-4e69-b31d-146008c7a98d}" IsUserDefined="1">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <sections>
+                    <section showlabel="false" showbar="false" IsUserDefined="0" id="{6ea55408-7737-43ea-a422-b811caee4dab}">
+                      <labels>
+                        <label description="General" languagecode="1033" />
+                      </labels>
+                      <rows>
+                        <row>
+                          <cell>
+                            <labels>
+                              <label description="Name" languagecode="1033" />
+                            </labels>
+                            <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" />
+                          </cell>
+                          <cell showlabel="true" rowspan="1" colspan="1">
+                            <labels />
+                          </cell>
+                        </row>
+                      </rows>
+                    </section>
+                  </sections>
+                </tab>
+                <tab id="{e0aacdac-2890-db11-afb0-0003ff5968ea}" IsUserDefined="1" locklevel="0">
+                  <labels>
+                    <label description="Administration" languagecode="1033" />
+                  </labels>
+                  <sections>
+                    <section showlabel="false" showbar="false" locklevel="0" id="{e1aacdac-2890-db11-afb0-0003ff5968ea}" IsUserDefined="1" layout="varwidth" columns="11">
+                      <labels>
+                        <label description="General" languagecode="1033" />
+                      </labels>
+                      <rows>
+                        <row>
+                          <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1">
+                            <labels>
+                              <label description="Owner" languagecode="1033" />
+                            </labels>
+                            <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                          </cell>
+                          <cell showlabel="true" colspan="1">
+                            <labels />
+                          </cell>
+                        </row>
+                      </rows>
+                    </section>
+                  </sections>
+                </tab>
+                <tab id="{e07953f6-496d-4948-9d20-d0e2fa1a4135}" IsUserDefined="0">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <sections>
+                    <section showlabel="true" showbar="true" locklevel="1" id="{e353747c-6836-4441-bb5b-f4ebbf554dfe}" IsUserDefined="0" height="auto">
+                      <labels>
+                        <label description="Notes" languagecode="1033" />
+                      </labels>
+                      <rows>
+                        <row>
+                          <cell colspan="2" showlabel="false" rowspan="5" auto="true">
+                            <labels>
+                              <label description="Note Text" languagecode="1033" />
+                            </labels>
+                            <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" />
+                          </cell>
+                        </row>
+                        <row />
+                        <row />
+                        <row />
+                        <row height="auto" />
+                      </rows>
+                    </section>
+                  </sections>
+                </tab>
+              </tabs>
+            </form>
+          </entity>
+          <entity name="new_productdiscountgroup" objecttypecode="10002">
+            <form type="preview" id="{9c7a254e-b043-485b-a4ea-e070d5e68ae4}">
+              <tabs>
+                <tab verticallayout="true" id="{adc6e4a5-7e0f-4914-a0d9-86cdfd75bbfa}" IsUserDefined="1">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <sections>
+                    <section showlabel="false" showbar="false" IsUserDefined="1" id="{471b5678-1263-4dee-81ea-bc244393399a}">
+                      <labels>
+                        <label description="Information" languagecode="1033" />
+                      </labels>
+                      <rows />
+                    </section>
+                  </sections>
+                </tab>
+              </tabs>
+            </form>
+          </entity>
+        </forms>
+      </FormXml>
+      <SavedQueries>
+        <savedqueries entity="SavedQuery" morerecords="0" paging-cookie="" version="3.0">
+          <savedquery>
+            <columnsetxml>
+              <columnset>
+                <column>new_name</column>
+                <column>createdon</column>
+                <ascend>new_name</ascend>
+              </columnset>
+            </columnsetxml>
+            <iscustomizable name="No">0</iscustomizable>
+            <isquickfindquery name="No">0</isquickfindquery>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="new_productdiscountgroup">
+                  <attribute name="new_name" />
+                  <order attribute="new_name" descending="false" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="0" />
+                  </filter>
+                  <attribute name="new_productdiscountgroupid" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <isuserdefined name="Yes">1</isuserdefined>
+            <isdefault name="Yes">1</isdefault>
+            <returnedtypecode formattedvalue="10,002">10002</returnedtypecode>
+            <savedqueryid>{23F6E6B2-D0B7-47F7-AAA1-E853CF8F8FE1}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" object="10002" jump="new_name" select="1" icon="1" preview="1">
+                <row name="result" id="new_productdiscountgroupid">
+                  <cell name="new_name" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="0">0</querytype>
+            <name>Active ProductDiscountGroup</name>
+          </savedquery>
+          <savedquery>
+            <columnsetxml>
+              <columnset>
+                <column>new_name</column>
+                <column>createdon</column>
+                <ascend>new_name</ascend>
+              </columnset>
+            </columnsetxml>
+            <iscustomizable name="No">0</iscustomizable>
+            <isquickfindquery name="No">0</isquickfindquery>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="new_productdiscountgroup">
+                  <attribute name="new_name" />
+                  <order attribute="new_name" descending="false" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="1" />
+                  </filter>
+                  <attribute name="new_productdiscountgroupid" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <isuserdefined name="Yes">1</isuserdefined>
+            <isdefault name="No">0</isdefault>
+            <returnedtypecode formattedvalue="10,002">10002</returnedtypecode>
+            <savedqueryid>{1AA41AE3-0719-4447-B924-615192AD3B92}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" object="10002" jump="new_name" select="1" icon="1" preview="1">
+                <row name="result" id="new_productdiscountgroupid">
+                  <cell name="new_name" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="0">0</querytype>
+            <name>Inactive ProductDiscountGroup</name>
+          </savedquery>
+          <savedquery>
+            <columnsetxml>
+              <columnset>
+                <column>new_name</column>
+                <column>createdon</column>
+                <ascend>new_name</ascend>
+              </columnset>
+            </columnsetxml>
+            <iscustomizable name="No">0</iscustomizable>
+            <isquickfindquery name="No">0</isquickfindquery>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="new_productdiscountgroup">
+                  <attribute name="new_name" />
+                  <order attribute="new_name" descending="false" />
+                  <attribute name="new_productdiscountgroupid" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <isuserdefined name="Yes">1</isuserdefined>
+            <isdefault name="Yes">1</isdefault>
+            <returnedtypecode formattedvalue="10,002">10002</returnedtypecode>
+            <savedqueryid>{CBD3DB3B-636A-42F7-B11A-DF51B1AB1EE4}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" object="10002" jump="new_name" select="1" icon="1" preview="1">
+                <row name="result" id="new_productdiscountgroupid">
+                  <cell name="new_name" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="1">1</querytype>
+            <name>ProductDiscountGroup Advanced Find View</name>
+          </savedquery>
+          <savedquery>
+            <columnsetxml>
+              <columnset version="3.0">
+                <column>new_name</column>
+                <column>new_productdiscountgroupid</column>
+                <ascend>new_name</ascend>
+              </columnset>
+            </columnsetxml>
+            <iscustomizable name="No">0</iscustomizable>
+            <isquickfindquery name="No">0</isquickfindquery>
+            <isuserdefined name="Yes">1</isuserdefined>
+            <isdefault name="Yes">1</isdefault>
+            <returnedtypecode formattedvalue="10,002">10002</returnedtypecode>
+            <savedqueryid>{62F7C683-1542-47FB-B0E9-51AA0D67BE0D}</savedqueryid>
+            <queryapi>AUTO</queryapi>
+            <layoutxml>
+              <grid name="new_productdiscountgroups" object="10002" jump="new_name" select="1" icon="1" preview="1">
+                <row name="new_productdiscountgroup" id="new_productdiscountgroupid">
+                  <cell name="new_name" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="2">2</querytype>
+            <name>ProductDiscountGroup Associated View</name>
+          </savedquery>
+          <savedquery>
+            <columnsetxml>
+              <columnset>
+                <column>new_name</column>
+                <column>createdon</column>
+                <ascend>new_name</ascend>
+              </columnset>
+            </columnsetxml>
+            <iscustomizable name="No">0</iscustomizable>
+            <isquickfindquery name="Yes">1</isquickfindquery>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="new_productdiscountgroup">
+                  <attribute name="new_name" />
+                  <order attribute="new_name" descending="false" />
+                  <filter type="or" isquickfindfields="1">
+                    <condition attribute="new_name" operator="like" value="{0}" />
+                  </filter>
+                  <attribute name="new_productdiscountgroupid" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <isuserdefined name="Yes">1</isuserdefined>
+            <isdefault name="Yes">1</isdefault>
+            <returnedtypecode formattedvalue="10,002">10002</returnedtypecode>
+            <savedqueryid>{9ECC3A86-1F6C-439C-97FC-508CF713C68D}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" object="10002" jump="new_name" select="1" icon="1" preview="1">
+                <row name="result" id="new_productdiscountgroupid">
+                  <cell name="new_name" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="4">4</querytype>
+            <name>Quick Find Active ProductDiscountGroup</name>
+          </savedquery>
+          <savedquery>
+            <columnsetxml>
+              <columnset>
+                <column>new_name</column>
+                <column>createdon</column>
+                <ascend>new_name</ascend>
+              </columnset>
+            </columnsetxml>
+            <iscustomizable name="No">0</iscustomizable>
+            <isquickfindquery name="No">0</isquickfindquery>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="new_productdiscountgroup">
+                  <attribute name="new_productdiscountgroupid" />
+                  <attribute name="new_name" />
+                  <filter type="or" isquickfindfields="1">
+                    <condition attribute="new_name" operator="like" value="{0}" />
+                  </filter>
+                  <order attribute="new_name" descending="false" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <isuserdefined name="Yes">1</isuserdefined>
+            <isdefault name="Yes">1</isdefault>
+            <returnedtypecode formattedvalue="10,002">10002</returnedtypecode>
+            <savedqueryid>{EEDA3D64-AE51-4706-9F49-A93701393C02}</savedqueryid>
+            <layoutxml>
+              <grid name="new_productdiscountgroups" object="10002" jump="new_name" select="1" icon="1" preview="0">
+                <row name="new_productdiscountgroup" id="new_productdiscountgroupid">
+                  <cell name="new_name" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="64">64</querytype>
+            <name>ProductDiscountGroup Lookup View</name>
+          </savedquery>
+        </savedqueries>
+      </SavedQueries>
+      <Icons />
+    </Entity>
+    <Entity>
+      <Name LocalizedName="Sales Header Discount" OriginalName="Sales Header Discount">New_SalesHeaderDiscount</Name>
+      <ObjectTypeCode>10000</ObjectTypeCode>
+      <LocalizedName>Sales Header Discount</LocalizedName>
+      <LocalizedCollectionName>SalesHeaderDiscount</LocalizedCollectionName>
+      <EntityInfo>
+        <entity Name="New_SalesHeaderDiscount">
+          <HasRelatedNotes>True</HasRelatedNotes>
+          <HasRelatedActivities>True</HasRelatedActivities>
+          <ObjectTypeCode>10000</ObjectTypeCode>
+          <BaseTableName>New_SalesHeaderDiscountBase</BaseTableName>
+          <WorkflowEventMask>-1</WorkflowEventMask>
+          <IsCustomizable>1</IsCustomizable>
+          <IsMappable>1</IsMappable>
+          <OwnershipTypeMask>UserOwned</OwnershipTypeMask>
+          <IsAudited>1</IsAudited>
+          <EntityMask>ActivityPointer</EntityMask>
+          <IsReplicated>1</IsReplicated>
+          <IsReplicationUserFiltered>1</IsReplicationUserFiltered>
+          <IsCustomEntity>1</IsCustomEntity>
+          <LocalizedName>Sales Header Discount</LocalizedName>
+          <LocalizedCollectionName>CRM_SalesHeaderDiscount</LocalizedCollectionName>
+          <Description />
+          <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+          <ExtensionTableName>New_SalesHeaderDiscountExtensionBase</ExtensionTableName>
+          <ReportViewName>FilteredNew_SalesHeaderDiscount</ReportViewName>
+          <IsRenameable>1</IsRenameable>
+          <attributes>
+            <attribute PhysicalName="CreatedBy">
+              <Type>lookup</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ReferencedEntityObjectTypeCode>8</ReferencedEntityObjectTypeCode>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Unique identifier of the user who created the record.</Description>
+            </attribute>
+            <attribute PhysicalName="CreatedOn">
+              <Type>datetime</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Date and time when the record was created.</Description>
+            </attribute>
+            <attribute PhysicalName="DeletionStateCode">
+              <Type>int</Type>
+            </attribute>
+            <attribute PhysicalName="ModifiedBy">
+              <Type>lookup</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ReferencedEntityObjectTypeCode>8</ReferencedEntityObjectTypeCode>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Unique identifier of the user who modified the record.</Description>
+            </attribute>
+            <attribute PhysicalName="ModifiedOn">
+              <Type>datetime</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Date and time when the record was modified.</Description>
+            </attribute>
+            <attribute PhysicalName="New_discountpercents">
+              <Type>float</Type>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsCustomField>1</IsCustomField>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description />
+            </attribute>
+            <attribute PhysicalName="New_minimumamount">
+              <Type>money</Type>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsCustomField>1</IsCustomField>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description />
+            </attribute>
+            <attribute PhysicalName="New_name">
+              <Type>nvarchar</Type>
+              <Length>200</Length>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsCustomField>1</IsCustomField>
+              <DisplayMask>ActivityPointerRegardingName|PrimaryName|ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>The name of the custom entity.</Description>
+            </attribute>
+            <attribute PhysicalName="New_SalesHeaderDiscountId">
+              <Type>primarykey</Type>
+              <IsNullable>0</IsNullable>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsPKAttribute>1</IsPKAttribute>
+              <DisplayMask>ValidForAdvancedFind|RequiredForGrid</DisplayMask>
+              <Description>Unique identifier for entity instances</Description>
+            </attribute>
+            <attribute PhysicalName="OwnerId">
+              <Type>owner</Type>
+              <IsNullable>0</IsNullable>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsLogical>1</IsLogical>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Owner Id</Description>
+            </attribute>
+            <attribute PhysicalName="OwnerIdDsc">
+              <Type>int</Type>
+              <IsNullable>0</IsNullable>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsLogical>1</IsLogical>
+              <AttributeOf>OwnerId</AttributeOf>
+              <XmlAbbreviation>dsc</XmlAbbreviation>
+              <Description />
+            </attribute>
+            <attribute PhysicalName="OwnerIdName">
+              <Type>nvarchar</Type>
+              <Length>320</Length>
+              <IsNullable>0</IsNullable>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsLogical>1</IsLogical>
+              <AttributeOf>OwnerId</AttributeOf>
+              <XmlAbbreviation>name</XmlAbbreviation>
+              <IsSortAttribute>1</IsSortAttribute>
+              <Description>Name of the owner</Description>
+            </attribute>
+            <attribute PhysicalName="OwnerIdType">
+              <Type>int</Type>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsLogical>1</IsLogical>
+              <DisplayMask>ObjectTypeCode</DisplayMask>
+              <AttributeOf>OwnerId</AttributeOf>
+              <XmlAbbreviation>type</XmlAbbreviation>
+              <Description>Owner Id Type</Description>
+            </attribute>
+            <attribute PhysicalName="OwningBusinessUnit">
+              <Type>lookup</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ReferencedEntityObjectTypeCode>10</ReferencedEntityObjectTypeCode>
+              <Description>Unique identifier for the business unit that owns the record</Description>
+            </attribute>
+            <attribute PhysicalName="OwningUser">
+              <Type>lookup</Type>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ReferencedEntityObjectTypeCode>8</ReferencedEntityObjectTypeCode>
+              <AggregateOf>OwnerId</AggregateOf>
+              <Description>Unique identifier for the user that owns the record.</Description>
+            </attribute>
+            <attribute PhysicalName="StateCode">
+              <Type>state</Type>
+              <IsNullable>0</IsNullable>
+              <ValidForReadApi>1</ValidForReadApi>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Status of the Sales Header Discount</Description>
+            </attribute>
+            <attribute PhysicalName="statecodeName">
+              <Type>virtual</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsLogical>1</IsLogical>
+              <AttributeOf>StateCode</AttributeOf>
+              <XmlAbbreviation>name</XmlAbbreviation>
+            </attribute>
+            <attribute PhysicalName="StatusCode">
+              <Type>status</Type>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <Description>Reason for the status of the Sales Header Discount</Description>
+            </attribute>
+            <attribute PhysicalName="statuscodeName">
+              <Type>virtual</Type>
+              <ValidForReadApi>1</ValidForReadApi>
+              <IsLogical>1</IsLogical>
+              <AttributeOf>StatusCode</AttributeOf>
+              <XmlAbbreviation>name</XmlAbbreviation>
+            </attribute>
+            <attribute PhysicalName="VersionNumber">
+              <Type>timestamp</Type>
+            </attribute>
+          </attributes>
+        </entity>
+      </EntityInfo>
+      <FieldXml>
+        <entity name="new_salesheaderdiscount" objecttypecode="10000">
+          <fields>
+            <field name="new_salesheaderdiscountid" requiredlevel="na">
+              <displaynames>
+                <displayname description="Sales Header Discount" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="createdon" requiredlevel="na" format="date">
+              <displaynames>
+                <displayname description="Created On" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="createdby" requiredlevel="na" lookupclass="SystemUsers" lookupstyle="single">
+              <displaynames>
+                <displayname description="Created By" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="modifiedon" requiredlevel="na" format="date">
+              <displaynames>
+                <displayname description="Modified On" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="modifiedby" requiredlevel="na" lookupclass="SystemUsers" lookupstyle="single">
+              <displaynames>
+                <displayname description="Modified By" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="ownerid" requiredlevel="na">
+              <displaynames>
+                <displayname description="Owner" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="owningbusinessunit" requiredlevel="na">
+              <displaynames>
+                <displayname description="Owning Business Unit" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="statecode" requiredlevel="na">
+              <displaynames>
+                <displayname description="Status" languagecode="1033" />
+              </displaynames>
+              <states nextvalue="0">
+                <state value="0" defaultstatus="1" invariantname="Active">
+                  <labels>
+                    <label description="Active" languagecode="1033" />
+                  </labels>
+                </state>
+                <state value="1" defaultstatus="2" invariantname="Inactive">
+                  <labels>
+                    <label description="Inactive" languagecode="1033" />
+                  </labels>
+                </state>
+              </states>
+            </field>
+            <field name="statuscode" requiredlevel="na">
+              <displaynames>
+                <displayname description="Status Reason" languagecode="1033" />
+              </displaynames>
+              <statuses nextvalue="3">
+                <status value="1" state="0">
+                  <labels>
+                    <label description="Active" languagecode="1033" />
+                  </labels>
+                </status>
+                <status value="2" state="1">
+                  <labels>
+                    <label description="Inactive" languagecode="1033" />
+                  </labels>
+                </status>
+              </statuses>
+            </field>
+            <field name="new_name" requiredlevel="required" maxlength="100" format="text">
+              <displaynames>
+                <displayname description="Name" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="new_minimumamount" requiredlevel="na" minvalue="0" maxvalue="1000000000" accuracy="2">
+              <displaynames>
+                <displayname description="Minimum Amount" languagecode="1033" />
+              </displaynames>
+            </field>
+            <field name="new_discountpercents" requiredlevel="na" minvalue="0" maxvalue="1000000000" accuracy="2">
+              <displaynames>
+                <displayname description="Discount Percents" languagecode="1033" />
+              </displaynames>
+            </field>
+          </fields>
+        </entity>
+      </FieldXml>
+      <FormXml>
+        <forms>
+          <entity name="new_salesheaderdiscount" objecttypecode="10000">
+            <form type="main" id="{f3dc1e58-cd52-46db-8b14-cf4498b31896}">
+              <tabs>
+                <tab verticallayout="true" id="{6f499b67-1178-45b2-add2-099e661e61da}" IsUserDefined="1">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <sections>
+                    <section showlabel="false" showbar="false" locklevel="0" id="{00af0ce5-6f8b-db11-9b7d-0003ff5968ea}" IsUserDefined="1" layout="varwidth" columns="11">
+                      <labels>
+                        <label description="Discount Parameters" languagecode="1033" />
+                      </labels>
+                      <rows>
+                        <row>
+                          <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="2">
+                            <labels>
+                              <label description="Parent Account" languagecode="1033" />
+                            </labels>
+                            <control id="new_parentaccountid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_parentaccountid" disabled="false" />
+                          </cell>
+                        </row>
+                        <row>
+                          <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="2">
+                            <labels>
+                              <label description="Minimum Amount" languagecode="1033" />
+                            </labels>
+                            <control id="new_minimumamount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_minimumamount" disabled="false" />
+                          </cell>
+                        </row>
+                        <row>
+                          <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="2">
+                            <labels>
+                              <label description="Discount Percents" languagecode="1033" />
+                            </labels>
+                            <control id="new_discountpercents" classid="{0D2C745A-E5A8-4c8f-BA63-C6D3BB604660}" datafieldname="new_discountpercents" disabled="false" />
+                          </cell>
+                        </row>
+                      </rows>
+                    </section>
+                  </sections>
+                </tab>
+                <tab id="{a0faa10f-708b-db11-9b7d-0003ff5968ea}" IsUserDefined="1" locklevel="0">
+                  <labels>
+                    <label description="Administration" languagecode="1033" />
+                  </labels>
+                  <sections>
+                    <section showlabel="false" showbar="false" IsUserDefined="0" id="{4c62b525-853a-4578-8d6d-1efddbea1562}" locklevel="0">
+                      <labels>
+                        <label description="General" languagecode="1033" />
+                      </labels>
+                      <rows>
+                        <row>
+                          <cell>
+                            <labels>
+                              <label description="Name" languagecode="1033" />
+                            </labels>
+                            <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" />
+                          </cell>
+                          <cell>
+                            <labels>
+                              <label description="Owner" languagecode="1033" />
+                            </labels>
+                            <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                          </cell>
+                        </row>
+                      </rows>
+                    </section>
+                  </sections>
+                </tab>
+                <tab id="{c1da205a-e2e8-4d2c-a9b5-fbda3cd64b09}" IsUserDefined="0">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <sections>
+                    <section showlabel="true" showbar="true" locklevel="1" id="{d4fa035d-96a2-42b5-b14e-8258f59ed782}" IsUserDefined="0" height="auto">
+                      <labels>
+                        <label description="Notes" languagecode="1033" />
+                      </labels>
+                      <rows>
+                        <row>
+                          <cell colspan="2" showlabel="false" rowspan="5" auto="true">
+                            <labels>
+                              <label description="Note Text" languagecode="1033" />
+                            </labels>
+                            <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" />
+                          </cell>
+                        </row>
+                        <row />
+                        <row />
+                        <row />
+                        <row height="auto" />
+                      </rows>
+                    </section>
+                  </sections>
+                </tab>
+              </tabs>
+            </form>
+          </entity>
+          <entity name="new_salesheaderdiscount" objecttypecode="10000">
+            <form type="preview" id="{d07f8b20-1aa6-44a9-bb99-2b6bc562acb8}">
+              <tabs>
+                <tab verticallayout="true" id="{ebb86812-cf63-46c0-aa8f-6a94fac22ce5}" IsUserDefined="1">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <sections>
+                    <section showlabel="false" showbar="false" IsUserDefined="1" id="{05712874-c187-4a88-8fae-70bee51604f2}">
+                      <labels>
+                        <label description="Information" languagecode="1033" />
+                      </labels>
+                      <rows />
+                    </section>
+                  </sections>
+                </tab>
+              </tabs>
+            </form>
+          </entity>
+        </forms>
+      </FormXml>
+      <SavedQueries>
+        <savedqueries entity="SavedQuery" morerecords="0" paging-cookie="" version="3.0">
+          <savedquery>
+            <columnsetxml>
+              <columnset>
+                <column>new_name</column>
+                <column>createdon</column>
+                <ascend>new_name</ascend>
+              </columnset>
+            </columnsetxml>
+            <iscustomizable name="No">0</iscustomizable>
+            <isquickfindquery name="No">0</isquickfindquery>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="new_salesheaderdiscount">
+                  <order attribute="new_parentaccountid" descending="false" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="0" />
+                  </filter>
+                  <attribute name="new_parentaccountid" />
+                  <attribute name="new_minimumamount" />
+                  <attribute name="new_discountpercents" />
+                  <attribute name="new_name" />
+                  <attribute name="new_salesheaderdiscountid" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <isuserdefined name="Yes">1</isuserdefined>
+            <isdefault name="Yes">1</isdefault>
+            <returnedtypecode formattedvalue="10,000">10000</returnedtypecode>
+            <savedqueryid>{238958BB-333E-478C-B979-CC88AE7C0E5A}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" object="10000" jump="new_name" select="1" icon="1" preview="1">
+                <row name="result" id="new_salesheaderdiscountid">
+                  <cell name="new_name" width="100" />
+                  <cell name="new_parentaccountid" width="100" />
+                  <cell name="new_minimumamount" width="100" />
+                  <cell name="new_discountpercents" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="0">0</querytype>
+            <name>Active CRM_SalesHeaderDiscount</name>
+          </savedquery>
+          <savedquery>
+            <columnsetxml>
+              <columnset>
+                <column>new_name</column>
+                <column>createdon</column>
+                <ascend>new_name</ascend>
+              </columnset>
+            </columnsetxml>
+            <iscustomizable name="No">0</iscustomizable>
+            <isquickfindquery name="No">0</isquickfindquery>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="new_salesheaderdiscount">
+                  <attribute name="new_name" />
+                  <order attribute="new_name" descending="false" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="1" />
+                  </filter>
+                  <attribute name="new_parentaccountid" />
+                  <attribute name="new_minimumamount" />
+                  <attribute name="new_discountpercents" />
+                  <attribute name="new_salesheaderdiscountid" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <isuserdefined name="Yes">1</isuserdefined>
+            <isdefault name="No">0</isdefault>
+            <returnedtypecode formattedvalue="10,000">10000</returnedtypecode>
+            <savedqueryid>{3A431A60-486C-4A60-9EAB-2E529C50001B}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" object="10000" jump="new_name" select="1" icon="1" preview="1">
+                <row name="result" id="new_salesheaderdiscountid">
+                  <cell name="new_name" width="75" />
+                  <cell name="new_parentaccountid" width="100" />
+                  <cell name="new_minimumamount" width="100" />
+                  <cell name="new_discountpercents" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="0">0</querytype>
+            <name>Inactive CRM_SalesHeaderDiscount</name>
+          </savedquery>
+          <savedquery>
+            <columnsetxml>
+              <columnset>
+                <column>new_name</column>
+                <column>createdon</column>
+                <ascend>new_name</ascend>
+              </columnset>
+            </columnsetxml>
+            <iscustomizable name="No">0</iscustomizable>
+            <isquickfindquery name="No">0</isquickfindquery>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="new_salesheaderdiscount">
+                  <attribute name="new_salesheaderdiscountid" />
+                  <attribute name="new_name" />
+                  <attribute name="createdon" />
+                  <order attribute="new_name" descending="false" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <isuserdefined name="Yes">1</isuserdefined>
+            <isdefault name="Yes">1</isdefault>
+            <returnedtypecode formattedvalue="10,000">10000</returnedtypecode>
+            <savedqueryid>{05F70821-CD26-4C32-B9F9-B357F25EBD26}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" object="10000" jump="new_name" select="1" icon="1" preview="1">
+                <row name="result" id="new_salesheaderdiscountid">
+                  <cell name="new_name" width="300" />
+                  <cell name="createdon" width="125" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="1">1</querytype>
+            <name>Sales Header Discount Advanced Find View</name>
+          </savedquery>
+          <savedquery>
+            <columnsetxml>
+              <columnset version="3.0">
+                <column>new_discountpercents</column>
+                <column>new_name</column>
+                <column>new_minimumamount</column>
+                <column>new_parentaccountid</column>
+                <column>new_salesheaderdiscountid</column>
+                <ascend>new_name</ascend>
+              </columnset>
+            </columnsetxml>
+            <iscustomizable name="No">0</iscustomizable>
+            <isquickfindquery name="No">0</isquickfindquery>
+            <isuserdefined name="Yes">1</isuserdefined>
+            <isdefault name="Yes">1</isdefault>
+            <returnedtypecode formattedvalue="10,000">10000</returnedtypecode>
+            <savedqueryid>{9643F602-F01E-46B0-8B44-70E51AB876CF}</savedqueryid>
+            <queryapi>AUTO</queryapi>
+            <layoutxml>
+              <grid name="new_salesheaderdiscounts" object="10000" jump="new_name" select="1" icon="1" preview="1">
+                <row name="new_salesheaderdiscount" id="new_salesheaderdiscountid">
+                  <cell name="new_name" width="75" />
+                  <cell name="new_parentaccountid" width="100" />
+                  <cell name="new_minimumamount" width="100" />
+                  <cell name="new_discountpercents" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="2">2</querytype>
+            <name>Sales Header Discount Associated View</name>
+          </savedquery>
+          <savedquery>
+            <columnsetxml>
+              <columnset>
+                <column>new_name</column>
+                <column>createdon</column>
+                <ascend>new_name</ascend>
+              </columnset>
+            </columnsetxml>
+            <iscustomizable name="No">0</iscustomizable>
+            <isquickfindquery name="Yes">1</isquickfindquery>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="new_salesheaderdiscount">
+                  <attribute name="new_name" />
+                  <order attribute="new_name" descending="false" />
+                  <filter type="or" isquickfindfields="1">
+                    <condition attribute="new_name" operator="like" value="{0}" />
+                  </filter>
+                  <attribute name="new_parentaccountid" />
+                  <attribute name="new_minimumamount" />
+                  <attribute name="new_discountpercents" />
+                  <attribute name="new_salesheaderdiscountid" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <isuserdefined name="Yes">1</isuserdefined>
+            <isdefault name="Yes">1</isdefault>
+            <returnedtypecode formattedvalue="10,000">10000</returnedtypecode>
+            <savedqueryid>{AA69EE5D-C596-45AD-B954-1B44947AE746}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" object="10000" jump="new_name" select="1" icon="1" preview="1">
+                <row name="result" id="new_salesheaderdiscountid">
+                  <cell name="new_name" width="75" />
+                  <cell name="new_parentaccountid" width="100" />
+                  <cell name="new_minimumamount" width="100" />
+                  <cell name="new_discountpercents" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="4">4</querytype>
+            <name>Quick Find Active CRM_SalesHeaderDiscount</name>
+          </savedquery>
+          <savedquery>
+            <columnsetxml>
+              <columnset>
+                <column>new_name</column>
+                <column>createdon</column>
+                <ascend>new_name</ascend>
+              </columnset>
+            </columnsetxml>
+            <iscustomizable name="No">0</iscustomizable>
+            <isquickfindquery name="No">0</isquickfindquery>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="new_salesheaderdiscount">
+                  <attribute name="new_salesheaderdiscountid" />
+                  <attribute name="new_name" />
+                  <filter type="or" isquickfindfields="1">
+                    <condition attribute="new_parentaccountid" operator="like" value="{0}" />
+                  </filter>
+                  <order attribute="new_discountpercents" descending="true" />
+                  <attribute name="new_parentaccountid" />
+                  <attribute name="new_minimumamount" />
+                  <attribute name="new_discountpercents" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <isuserdefined name="Yes">1</isuserdefined>
+            <isdefault name="Yes">1</isdefault>
+            <returnedtypecode formattedvalue="10,000">10000</returnedtypecode>
+            <savedqueryid>{6DAFC81B-54DF-4091-BBBF-F6D8BF6AC6AE}</savedqueryid>
+            <layoutxml>
+              <grid name="new_salesheaderdiscounts" object="10000" jump="new_name" select="1" icon="1" preview="0">
+                <row name="new_salesheaderdiscount" id="new_salesheaderdiscountid">
+                  <cell name="new_name" width="75" />
+                  <cell name="new_discountpercents" width="100" />
+                  <cell name="new_parentaccountid" width="100" />
+                  <cell name="new_minimumamount" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype formattedvalue="64">64</querytype>
+            <name>Sales Header Discount Lookup View</name>
+          </savedquery>
+        </savedqueries>
+      </SavedQueries>
+      <Icons />
+    </Entity>
+  </Entities>
+  <EntityMaps>
+    <EntityMap>
+      <EntitySource LocalizedName="CustomerDiscountGroup">New_CustomerDiscountGroup</EntitySource>
+      <EntityTarget LocalizedName="Sales Lines Discount">New_SalesLinesDiscount</EntityTarget>
+      <AttributeMaps />
+    </EntityMap>
+    <EntityMap>
+      <EntitySource LocalizedName="Account">Account</EntitySource>
+      <EntityTarget LocalizedName="Sales Lines Discount">New_SalesLinesDiscount</EntityTarget>
+      <AttributeMaps />
+    </EntityMap>
+    <EntityMap>
+      <EntitySource LocalizedName="Product">Product</EntitySource>
+      <EntityTarget LocalizedName="Sales Lines Discount">New_SalesLinesDiscount</EntityTarget>
+      <AttributeMaps />
+    </EntityMap>
+    <EntityMap>
+      <EntitySource LocalizedName="ProductDiscountGroup">New_ProductDiscountGroup</EntitySource>
+      <EntityTarget LocalizedName="Product">Product</EntityTarget>
+      <AttributeMaps />
+    </EntityMap>
+    <EntityMap>
+      <EntitySource LocalizedName="CustomerDiscountGroup">New_CustomerDiscountGroup</EntitySource>
+      <EntityTarget LocalizedName="Account">Account</EntityTarget>
+      <AttributeMaps />
+    </EntityMap>
+    <EntityMap>
+      <EntitySource LocalizedName="Account">Account</EntitySource>
+      <EntityTarget LocalizedName="Sales Header Discount">New_SalesHeaderDiscount</EntityTarget>
+      <AttributeMaps />
+    </EntityMap>
+    <EntityMap>
+      <EntitySource LocalizedName="ProductDiscountGroup">New_ProductDiscountGroup</EntitySource>
+      <EntityTarget LocalizedName="Sales Lines Discount">New_SalesLinesDiscount</EntityTarget>
+      <AttributeMaps />
+    </EntityMap>
+  </EntityMaps>
+  <EntityRelationships>
+    <EntityRelationship Name="new_salesheaderdiscount_Faxes">
+      <ReferencingEntityName LocalizedName="Fax">Fax</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="Sales Header Discount">New_SalesHeaderDiscount</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the fax activity is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegarding" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_productdiscountgroup_Faxes">
+      <ReferencingEntityName LocalizedName="Fax">Fax</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="ProductDiscountGroup">New_ProductDiscountGroup</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the fax activity is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegarding" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_saleslinesdiscount_Tasks">
+      <ReferencingEntityName LocalizedName="Task">Task</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="Sales Lines Discount">New_SalesLinesDiscount</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the task is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegardingForTask" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_customerdiscountgroup_Emails">
+      <ReferencingEntityName LocalizedName="E-mail">Email</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="CustomerDiscountGroup">New_CustomerDiscountGroup</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the e-mail is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegarding" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_customerdiscountgroup_Faxes">
+      <ReferencingEntityName LocalizedName="Fax">Fax</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="CustomerDiscountGroup">New_CustomerDiscountGroup</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the fax activity is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegarding" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_saleslinesdiscount_Faxes">
+      <ReferencingEntityName LocalizedName="Fax">Fax</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="Sales Lines Discount">New_SalesLinesDiscount</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the fax activity is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegarding" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_salesheaderdiscount_Appointments">
+      <ReferencingEntityName LocalizedName="Appointment">Appointment</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="Sales Header Discount">New_SalesHeaderDiscount</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the appointment is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegarding" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_customerdiscountgroup_ServiceAppointments">
+      <ReferencingEntityName LocalizedName="Service Activity">ServiceAppointment</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="CustomerDiscountGroup">New_CustomerDiscountGroup</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the service activity is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegarding" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_saleslinesdiscount_PhoneCalls">
+      <ReferencingEntityName LocalizedName="Phone Call">PhoneCall</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="Sales Lines Discount">New_SalesLinesDiscount</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the phone call activity is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegarding" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="Account_New_SalesHeaderDiscounts">
+      <ReferencingEntityName LocalizedName="Sales Header Discount">New_SalesHeaderDiscount</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="Account">Account</ReferencedEntityName>
+      <ReferencingAttributeName>new_parentaccountid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>2</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier for Account associated with Sales Header Discount.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>Cascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="new_parentaccountid" requiredlevel="required">
+          <displaynames>
+            <displayname description="Parent Account" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_saleslinesdiscount_Emails">
+      <ReferencingEntityName LocalizedName="E-mail">Email</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="Sales Lines Discount">New_SalesLinesDiscount</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the e-mail is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegarding" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="Product_New_SalesLinesDiscounts">
+      <ReferencingEntityName LocalizedName="Sales Lines Discount">New_SalesLinesDiscount</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="Product">Product</ReferencedEntityName>
+      <ReferencingAttributeName>new_relatedproductid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier for Product associated with Sales Lines Discount.</RelationshipDescription>
+      <CascadingRelationshipType>2</CascadingRelationshipType>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>RemoveLink</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <FieldXml>
+        <field name="new_relatedproductid" requiredlevel="na">
+          <displaynames>
+            <displayname description="Related Product" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_customerdiscountgroup_Appointments">
+      <ReferencingEntityName LocalizedName="Appointment">Appointment</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="CustomerDiscountGroup">New_CustomerDiscountGroup</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the appointment is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegarding" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_salesheaderdiscount_Annotations">
+      <ReferencingEntityName LocalizedName="Note">Annotation</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="Sales Header Discount">New_SalesHeaderDiscount</ReferencedEntityName>
+      <ReferencingAttributeName>objectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the note is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="objectid" requiredlevel="na">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_salesheaderdiscount_Emails">
+      <ReferencingEntityName LocalizedName="E-mail">Email</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="Sales Header Discount">New_SalesHeaderDiscount</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the e-mail is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegarding" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_saleslinesdiscount_Letters">
+      <ReferencingEntityName LocalizedName="Letter">Letter</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="Sales Lines Discount">New_SalesLinesDiscount</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the letter activity is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegarding" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_productdiscountgroup_Appointments">
+      <ReferencingEntityName LocalizedName="Appointment">Appointment</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="ProductDiscountGroup">New_ProductDiscountGroup</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the appointment is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegarding" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_customerdiscountgroup_PhoneCalls">
+      <ReferencingEntityName LocalizedName="Phone Call">PhoneCall</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="CustomerDiscountGroup">New_CustomerDiscountGroup</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the phone call activity is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegarding" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_productdiscountgroup_ServiceAppointments">
+      <ReferencingEntityName LocalizedName="Service Activity">ServiceAppointment</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="ProductDiscountGroup">New_ProductDiscountGroup</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the service activity is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegarding" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_productdiscountgroup_Letters">
+      <ReferencingEntityName LocalizedName="Letter">Letter</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="ProductDiscountGroup">New_ProductDiscountGroup</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the letter activity is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegarding" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="New_ProductDiscountGroup_New_SalesLinesDiscounts">
+      <ReferencingEntityName LocalizedName="Sales Lines Discount">New_SalesLinesDiscount</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="ProductDiscountGroup">New_ProductDiscountGroup</ReferencedEntityName>
+      <ReferencingAttributeName>new_productdiscountgroupid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier for ProductDiscountGroup associated with Sales Lines Discount.</RelationshipDescription>
+      <CascadingRelationshipType>2</CascadingRelationshipType>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>RemoveLink</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <FieldXml>
+        <field name="new_productdiscountgroupid" requiredlevel="na">
+          <displaynames>
+            <displayname description="Product Discount Group" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_customerdiscountgroup_Letters">
+      <ReferencingEntityName LocalizedName="Letter">Letter</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="CustomerDiscountGroup">New_CustomerDiscountGroup</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the letter activity is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegarding" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_saleslinesdiscount_ServiceAppointments">
+      <ReferencingEntityName LocalizedName="Service Activity">ServiceAppointment</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="Sales Lines Discount">New_SalesLinesDiscount</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the service activity is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegarding" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_productdiscountgroup_Emails">
+      <ReferencingEntityName LocalizedName="E-mail">Email</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="ProductDiscountGroup">New_ProductDiscountGroup</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the e-mail is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegarding" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="New_ProductDiscountGroup_Products">
+      <ReferencingEntityName LocalizedName="Product">Product</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="ProductDiscountGroup">New_ProductDiscountGroup</ReferencedEntityName>
+      <ReferencingAttributeName>new_productdiscountgroupid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier for ProductDiscountGroup associated with Product.</RelationshipDescription>
+      <CascadingRelationshipType>2</CascadingRelationshipType>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>RemoveLink</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <FieldXml>
+        <field name="new_productdiscountgroupid" requiredlevel="na">
+          <displaynames>
+            <displayname description="Product Discount Group" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_productdiscountgroup_PhoneCalls">
+      <ReferencingEntityName LocalizedName="Phone Call">PhoneCall</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="ProductDiscountGroup">New_ProductDiscountGroup</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the phone call activity is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegarding" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_saleslinesdiscount_Appointments">
+      <ReferencingEntityName LocalizedName="Appointment">Appointment</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="Sales Lines Discount">New_SalesLinesDiscount</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the appointment is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegarding" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_salesheaderdiscount_PhoneCalls">
+      <ReferencingEntityName LocalizedName="Phone Call">PhoneCall</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="Sales Header Discount">New_SalesHeaderDiscount</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the phone call activity is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegarding" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_customerdiscountgroup_Tasks">
+      <ReferencingEntityName LocalizedName="Task">Task</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="CustomerDiscountGroup">New_CustomerDiscountGroup</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the task is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegardingForTask" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="Account_New_SalesLinesDiscounts">
+      <ReferencingEntityName LocalizedName="Sales Lines Discount">New_SalesLinesDiscount</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="Account">Account</ReferencedEntityName>
+      <ReferencingAttributeName>new_parentaccountid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier for Account associated with Sales Lines Discount.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>Cascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="new_parentaccountid" requiredlevel="na">
+          <displaynames>
+            <displayname description="Parent Account" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_salesheaderdiscount_Tasks">
+      <ReferencingEntityName LocalizedName="Task">Task</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="Sales Header Discount">New_SalesHeaderDiscount</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the task is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegardingForTask" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_productdiscountgroup_Annotations">
+      <ReferencingEntityName LocalizedName="Note">Annotation</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="ProductDiscountGroup">New_ProductDiscountGroup</ReferencedEntityName>
+      <ReferencingAttributeName>objectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the note is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="objectid" requiredlevel="na">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_salesheaderdiscount_ServiceAppointments">
+      <ReferencingEntityName LocalizedName="Service Activity">ServiceAppointment</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="Sales Header Discount">New_SalesHeaderDiscount</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the service activity is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegarding" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_salesheaderdiscount_Letters">
+      <ReferencingEntityName LocalizedName="Letter">Letter</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="Sales Header Discount">New_SalesHeaderDiscount</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the letter activity is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegarding" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="New_CustomerDiscountGroup_Accounts">
+      <ReferencingEntityName LocalizedName="Account">Account</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="CustomerDiscountGroup">New_CustomerDiscountGroup</ReferencedEntityName>
+      <ReferencingAttributeName>new_customerdiscountgroupid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier for CustomerDiscountGroup associated with Account.</RelationshipDescription>
+      <CascadingRelationshipType>2</CascadingRelationshipType>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>RemoveLink</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <FieldXml>
+        <field name="new_customerdiscountgroupid" requiredlevel="na">
+          <displaynames>
+            <displayname description="Customer Discount Group" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="New_CustomerDiscountGroup_New_SalesLinesDiscounts">
+      <ReferencingEntityName LocalizedName="Sales Lines Discount">New_SalesLinesDiscount</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="CustomerDiscountGroup">New_CustomerDiscountGroup</ReferencedEntityName>
+      <ReferencingAttributeName>new_customerdiscountgroupid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier for CustomerDiscountGroup associated with Sales Lines Discount.</RelationshipDescription>
+      <CascadingRelationshipType>2</CascadingRelationshipType>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>RemoveLink</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <FieldXml>
+        <field name="new_customerdiscountgroupid" requiredlevel="na">
+          <displaynames>
+            <displayname description="Customer Discount Group" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_saleslinesdiscount_Annotations">
+      <ReferencingEntityName LocalizedName="Note">Annotation</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="Sales Lines Discount">New_SalesLinesDiscount</ReferencedEntityName>
+      <ReferencingAttributeName>objectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the note is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="objectid" requiredlevel="na">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_customerdiscountgroup_Annotations">
+      <ReferencingEntityName LocalizedName="Note">Annotation</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="CustomerDiscountGroup">New_CustomerDiscountGroup</ReferencedEntityName>
+      <ReferencingAttributeName>objectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the note is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="objectid" requiredlevel="na">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+    <EntityRelationship Name="new_productdiscountgroup_Tasks">
+      <ReferencingEntityName LocalizedName="Task">Task</ReferencingEntityName>
+      <ReferencedEntityName LocalizedName="ProductDiscountGroup">New_ProductDiscountGroup</ReferencedEntityName>
+      <ReferencingAttributeName>regardingobjectid</ReferencingAttributeName>
+      <ReferencingAttributeRequiredLevel>0</ReferencingAttributeRequiredLevel>
+      <RelationshipDescription>Unique identifier of the object with which the task is associated.</RelationshipDescription>
+      <CascadingRelationshipType>1</CascadingRelationshipType>
+      <CascadeAssign>Cascade</CascadeAssign>
+      <CascadeDelete>Cascade</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>Cascade</CascadeReparent>
+      <CascadeShare>Cascade</CascadeShare>
+      <CascadeUnshare>Cascade</CascadeUnshare>
+      <FieldXml>
+        <field name="regardingobjectid" requiredlevel="na" lookupclass="ActivityRegardingForTask" lookupstyle="single" format="regarding">
+          <displaynames>
+            <displayname description="Regarding" languagecode="1033" />
+          </displaynames>
+        </field>
+      </FieldXml>
+    </EntityRelationship>
+  </EntityRelationships>
+</ImportExportXml>

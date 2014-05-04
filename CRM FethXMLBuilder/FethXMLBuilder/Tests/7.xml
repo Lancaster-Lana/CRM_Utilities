@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<entity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="opportunitycompetitors">
+  <NoAttributes>false</NoAttributes>
+  <AllAttributes>false</AllAttributes>
+  <attribute name="opportunityid" aggregate="" alias="" />
+  <attribute name="opportunitycompetitorid" aggregate="" alias="" />
+  <filter name="" type="or">
+    <condition name="" attribute="versionnumber" operator="lt" value="543" aggregate="false" alias="">
+      <value>543</value>
+    </condition>
+    <filter name="" type="or">
+      <condition name="" attribute="opportunityid" operator="ne" value="8967" aggregate="false" alias="">
+        <value>8967</value>
+      </condition>
+    </filter>
+  </filter>
+  <order name="" descending="false" attribute="opportunitycompetitorid" />
+  <order name="" descending="true" attribute="opportunityid" />
+</entity>

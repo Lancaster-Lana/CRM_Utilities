@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CustomizationsComparator.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FirstColor" Roaming="true" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">255, 224, 192</Value>
+    </Setting>
+    <Setting Name="SecondColor" Roaming="true" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">192, 255, 255</Value>
+    </Setting>
+    <Setting Name="CommonColor" Roaming="true" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">WhiteSmoke</Value>
+    </Setting>
+    <Setting Name="AutoNavigateSelectedRow" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ShowCurrentCellContentOnForm" Roaming="true" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DifferColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Red</Value>
+    </Setting>
+    <Setting Name="AbsentColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">128, 128, 255</Value>
+    </Setting>
+    <Setting Name="LoadCellToWordPad" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

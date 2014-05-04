@@ -1,0 +1,9 @@
+bin\Debug\FethXMLBuilder.Business.dll
+bin\Debug\FethXMLBuilder.Business.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\FethXMLBuilder.Business.Properties.Resources.resources
+obj\Debug\FethXMLBuilder.Business.csproj.GenerateResource.Cache
+obj\Debug\FethXMLBuilder.Business.dll
+obj\Debug\FethXMLBuilder.Business.pdb
+bin\Debug\FetchXMLBuilder.Services.dll
+bin\Debug\FetchXMLBuilder.Services.pdb

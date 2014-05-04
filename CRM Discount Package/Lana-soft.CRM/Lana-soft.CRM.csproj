@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{17295B9B-8320-4FE7-A332-AA633DD7E135}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>Lana-soft.CRM</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>LanaSoftCRM</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <WebReference_EnableProperties>true</WebReference_EnableProperties>
+    <WebReference_EnableSQLTypes>false</WebReference_EnableSQLTypes>
+    <WebReference_EnableLegacyEventingModel>true</WebReference_EnableLegacyEventingModel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services">
+      <Name>system.web.services</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CRMHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\CalloutConfigCustomizer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\FormCustomizer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\ImportExportCustomizer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\ISVConfigCustomizer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\SiteMapCustomizer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\availableofflinetype.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\calloutconfig\callouttype.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\calloutconfig\onerrortype.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\clienttypes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\configurationboolean.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\formcustomizer\fielddatatype.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\formcustomizer\formnavigator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\formcustomizer\insertionmode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\formcustomizer\jscripttype.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\importexport\attributetype.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\importexport\picklistoption.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\isprofiletype.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\isvconfig\leftnavigationitem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\isvconfig\menuitem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\isvconfig\toolbarbutton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\licensetypes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\privilegetypes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\showgroupstype.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\sitemap\area.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\sitemap\group.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\sitemap\leftnavigationarea.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\sitemap\privilegenode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\sitemap\subarea.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\utility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\supportingitems\windowmode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web References\MicrosoftCrmService\Reference.cs">
+      <DependentUpon>Reference.map</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Web References\MicrosoftMetadataService\Reference.cs">
+      <DependentUpon>Reference.map</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <None Include="Web References\MicrosoftCrmService\BusinessEntity1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MicrosoftCrmService\BusinessEntityCollection1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MicrosoftCrmService\CrmService.disco" />
+    <None Include="Web References\MicrosoftCrmService\CrmService.wsdl" />
+    <None Include="Web References\MicrosoftCrmService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MicrosoftCrmService\Response1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MicrosoftMetadataService\AttributeMetadata1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MicrosoftMetadataService\EntityMetadata1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MicrosoftMetadataService\Metadata1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MicrosoftMetadataService\MetadataService.disco" />
+    <None Include="Web References\MicrosoftMetadataService\MetadataService.wsdl" />
+    <None Include="Web References\MicrosoftMetadataService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <WebReferences Include="Web References\" />
+    <WebReferenceUrl Include="http://localhost:5555/MSCRMServices/2006/CrmService.asmx">
+      <RelPath>Web References\MicrosoftCrmService\</RelPath>
+      <UrlBehavior>Static</UrlBehavior>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:5555/MSCRMServices/2006/MetadataService.asmx">
+      <RelPath>Web References\MicrosoftMetadataService\</RelPath>
+      <UrlBehavior>Static</UrlBehavior>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

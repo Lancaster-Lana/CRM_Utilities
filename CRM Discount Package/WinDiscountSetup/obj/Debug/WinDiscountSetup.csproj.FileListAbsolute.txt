@@ -1,0 +1,16 @@
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\WinDiscountSetup\bin\debug\WinDiscountSetup.exe.config
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\WinDiscountSetup\obj\Debug\Interop.SHDocVw.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\WinDiscountSetup\obj\Debug\AxInterop.SHDocVw.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\WinDiscountSetup\obj\Debug\WinDiscountSetup.csproj.ResolveComReference.cache
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\WinDiscountSetup\obj\Debug\WinDiscountSetup.csprojResolveAssemblyReference.cache
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\WinDiscountSetup\obj\Debug\WinDiscountSetup.DiscountPackageSetupForm.resources
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\WinDiscountSetup\obj\Debug\WinDiscountSetup.EditRolesForm.resources
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\WinDiscountSetup\obj\Debug\WinDiscountSetup.csproj.GenerateResource.Cache
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\WinDiscountSetup\bin\debug\WinDiscountSetup.exe
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\WinDiscountSetup\bin\debug\WinDiscountSetup.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\WinDiscountSetup\bin\debug\Interop.SHDocVw.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\WinDiscountSetup\bin\debug\AxInterop.SHDocVw.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\WinDiscountSetup\obj\Debug\WinDiscountSetup.exe
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\WinDiscountSetup\obj\Debug\WinDiscountSetup.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\WinDiscountSetup\bin\debug\Lana-soft.CRM.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\WinDiscountSetup\bin\debug\Lana-soft.CRM.pdb

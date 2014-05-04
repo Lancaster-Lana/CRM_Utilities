@@ -1,0 +1,11 @@
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Lana-soft.LicenseGenerator\obj\Debug\LanaSoft.LicenseGenerator.LicenseContainerPickerForm.resources
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Lana-soft.LicenseGenerator\obj\Debug\LanaSoft.LicenseGenerator.LicenseGeneratorForm.resources
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Lana-soft.LicenseGenerator\obj\Debug\Lana-Soft.LicenseGenerator.csproj.GenerateResource.Cache
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Lana-soft.LicenseGenerator\bin\Debug\Lana-soft.LicenseGenerator.exe.config
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Lana-soft.LicenseGenerator\bin\Debug\Lana-soft.LicenseGenerator.exe
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Lana-soft.LicenseGenerator\bin\Debug\Lana-soft.LicenseGenerator.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Lana-soft.LicenseGenerator\bin\Debug\Lana-soft.Licensing.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Lana-soft.LicenseGenerator\bin\Debug\Lana-soft.Licensing.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Lana-soft.LicenseGenerator\obj\Debug\Lana-soft.LicenseGenerator.exe
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Lana-soft.LicenseGenerator\obj\Debug\Lana-soft.LicenseGenerator.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Lana-soft.LicenseGenerator\obj\Debug\Lana-Soft.LicenseGenerator.csprojResolveAssemblyReference.cache

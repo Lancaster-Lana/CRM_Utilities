@@ -1,0 +1,94 @@
+//                               ___Discount Package 3.0___
+//1_____Detect customer accountid for quotedetail form from IFrame_Quote 
+
+if((window.frameElement != null) &&(window.frameElement.document!= null))
+{     
+      if((window.frameElement.document.getElementById("new_parentaccount")!= null) &&(document.getElementById("customerid")!= null))
+      window.frameElement.document.getElementById("new_parentaccount").value = document.getElementById("customerid").DataValue[0].id;
+   
+  //Load account info to quotedetail
+  if(window.frameElement.document.getElementById("IFRAME_Account")!= null)  
+  {
+       var accountUrl = "/_forms/readonly/readonly.aspx?objTypeCode=1&id="+crmForm.all.customerid.DataValue[0].id;
+       window.frameElement.document.getElementById("IFRAME_Account").src = accountUrl;
+   }
+
+}
+
+//2___ Get FetchXML function to filter 'Sales Header Discount' lookup 
+function GetFetchXML(account, detailamount)
+{                
+       var filterSTR =
+            "<filter type='and'>"
+           +   "<filter type='or'>"
+           +     "<condition attribute='new_parentaccountid' operator='eq' value='" + account  + "'/>"
+           +     "<condition attribute='new_parentaccountid' operator='null' />"
+           +  "</filter>";
+            
+       if (detailamount> 0)
+       {
+          filterSTR  +=  "<filter type='or'>"
+           +    "<condition attribute='new_minimumamount' operator='le' value='" + detailamount +"'/>"
+           +  "</filter>";
+        }
+
+         filterSTR  +=  "</filter>";
+
+        var additionalparams =  
+          "<fetch  mapping='logical'>"
+          +   "<entity name='new_salesheaderdiscount'>"
+          +   "<all-attributes/>"
+          +   filterSTR 
+          +"</entity>"
+          +"</fetch>";
+
+      return additionalparams;
+}
+
+//3_____ Function to load LookUp for ToolBarButton  'Header Discount...' OnClick event
+
+document.body.ShowLookUp = function()
+{    
+   if(crmForm.all.customerid.DataValue == null)
+   {
+          alert("Provide a value for Potential Customer!");
+   }
+   else  if ((crmForm.all.customerid.DataValue[0] != null) && (typeof(crmForm.all.customerid.DataValue[0]) != "undefined"))
+   {
+     if (typeof(crmForm.all.customerid.DataValue[0].name) != "undefined")
+     {          
+      var ___SalesHeaderDiscountCode = 10000;
+
+       var account = crmForm.all.customerid.DataValue[0].id;  
+       var detailamount= crmForm.all.totallineitemamount.value.replace(ORG_CURRENCY_SYMBOL,"");
+             detailamount =   (detailamount.length  == 0)? 0: LocStringToFloat(detailamount);       
+
+      var fetchXml = GetFetchXML(account,  detailamount);
+      var url = "/_controls/lookup/lookupsingle.aspx?objecttypes=" + ___SalesHeaderDiscountCode + "&browse=1" +  "&fetchXml=" + fetchXml;
+               
+      var returnValue =  window.showModalDialog(url);	
+
+       if (returnValue != null)
+       {         
+          var discountpercents = returnValue.items[0].keyValues["new_discountpercents"].value;                 
+          var minam = returnValue.items[0].keyValues["new_minimumamount"].value.replace(ORG_CURRENCY_SYMBOL,"");  
+          var minamount =  (minam.length  == 0)? 0: LocStringToFloat(minam);
+         if(detailamount > minamount)
+         {
+                    if (confirm("Apply discount?" ,"Yes", "No"))
+                   {                        
+                        crmForm.all.discountpercentage.DataValue = LocStringToFloat(discountpercents) ;                     
+                        alert("Total Amount($) value is not recalculated yet. Click Save/Recalculate!"); 
+
+                    }
+          }     
+          else
+         {
+                      var mess = "Discount is unavailable: Detail Amount($) is less than  "+minam +" " + ORG_CURRENCY_SYMBOL + "  !";
+                       alert(mess);                 
+          }
+ 
+     }
+    }        
+   }
+};

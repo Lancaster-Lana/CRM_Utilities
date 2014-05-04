@@ -1,0 +1,17 @@
+bin\Debug\FetchXMLBuilder.exe
+bin\Debug\FetchXMLBuilder.pdb
+bin\Debug\FetchXMLBuilder.Services.dll
+bin\Debug\FethXMLBuilder.Business.dll
+bin\Debug\FethXMLBuilder.Business.pdb
+bin\Debug\FetchXMLBuilder.Services.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\FetchXMLBuilder.UI.AttributesControl.resources
+obj\Debug\FetchXMLBuilder.UI.EditManagerControl.resources
+obj\Debug\FetchXMLBuilder.UI.FetchXMLControl.resources
+obj\Debug\FetchXMLBuilder.UI.FilterControl.resources
+obj\Debug\FetchXMLBuilder.UI.LinkEntityControl.resources
+obj\Debug\FetchXMLBuilder.UI.FetchXMLForm.resources
+obj\Debug\FecthXMLBuilder.GUI.Properties.Resources.resources
+obj\Debug\FetchXMLBuilder.csproj.GenerateResource.Cache
+obj\Debug\FetchXMLBuilder.exe
+obj\Debug\FetchXMLBuilder.pdb

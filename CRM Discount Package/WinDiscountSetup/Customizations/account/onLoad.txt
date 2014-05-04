@@ -1,0 +1,11 @@
+//	___Discount Package 3.0___
+//Detect CustomerDiscountGroup for 'Quote Product' form from IFrame_Account
+
+if((window.frameElement != null) &&(window.frameElement.document!= null))
+{       
+   if( (window.frameElement.document.getElementById("new_customergroup")!= null) 
+       &&(document.getElementById("new_customerdiscountgroupid")!= null)
+       &&(document.getElementById("new_customerdiscountgroupid").DataValue != null))   
+        window.frameElement.document.getElementById("new_customergroup").value = document.getElementById("new_customerdiscountgroupid").DataValue[0].id;           
+
+}

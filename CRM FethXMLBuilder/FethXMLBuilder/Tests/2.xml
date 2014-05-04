@@ -1,0 +1,38 @@
+
+	<entity name='activitymimeattachment'>
+		<attribute name='attachmentnumber' aggregate='count'/>
+		<attribute name='filename' alias='lok' aggregate='count'/>
+		<order attribute='filename'/>
+		<order attribute='mimetype' descending='true'/>
+		<filter type='and'>
+			<condition attribute='attachmentnumber' operator='in'>
+				<value>i</value>
+			</condition>
+		</filter>
+		<filter type='and'>
+			<filter type='or'>
+				<condition attribute='body' operator='eq' value='j'/>
+			</filter>
+			<condition attribute='filename' operator='eq' value='hg'/>
+		</filter>
+		<filter type='and'>
+			<condition attribute='filesize' operator='eq' value='47'/>
+		</filter>
+		<filter type='and'>
+			<condition attribute='attachmentnumber' operator='in'>
+				<value>ytg</value>
+				<value>654</value>
+				<value>464</value>
+			</condition>
+		</filter>
+		<link-entity name='attributemap' from='entitymapid' to='activitymimeattachmentid' link-type='outer'>
+			<all-attributes/>
+			<filter type='and'>
+				<condition attribute='entitymapid' operator='eq' value='0['/>
+			</filter>
+			<order attribute='issystem'/>
+			<order attribute='organizationid'/>
+			<link-entity name='activityparty' from='donotfax' to='deletionstatecode'/>
+		</link-entity>
+	</entity>
+

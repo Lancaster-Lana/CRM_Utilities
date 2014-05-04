@@ -1,0 +1,17 @@
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FetchXMLBuilder.Services\bin\Debug\FetchXMLBuilder.Services.dll.config
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FetchXMLBuilder.Services\bin\Debug\FetchXMLBuilder.Services.dll
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FetchXMLBuilder.Services\bin\Debug\FetchXMLBuilder.Services.pdb
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FetchXMLBuilder.Services\obj\Debug\ResolveAssemblyReference.cache
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FetchXMLBuilder.Services\obj\Debug\FetchXMLBuilder.Services.dll
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FetchXMLBuilder.Services\obj\Debug\FetchXMLBuilder.Services.pdb
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FetchXMLBuilder.Services\bin\Debug\FetchXMLBuilder.Services.dll.config
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FetchXMLBuilder.Services\bin\Debug\FetchXMLBuilder.Services.dll
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FetchXMLBuilder.Services\bin\Debug\FetchXMLBuilder.Services.pdb
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FetchXMLBuilder.Services\obj\Debug\FetchXMLBuilder.Services.csprojResolveAssemblyReference.cache
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FetchXMLBuilder.Services\obj\Debug\FetchXMLBuilder.Services.dll
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FetchXMLBuilder.Services\obj\Debug\FetchXMLBuilder.Services.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FetchXMLBuilder.Services\bin\Debug\FetchXMLBuilder.Services.dll.config
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FetchXMLBuilder.Services\bin\Debug\FetchXMLBuilder.Services.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FetchXMLBuilder.Services\bin\Debug\FetchXMLBuilder.Services.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FetchXMLBuilder.Services\obj\Debug\FetchXMLBuilder.Services.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FetchXMLBuilder.Services\obj\Debug\FetchXMLBuilder.Services.pdb

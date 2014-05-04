@@ -1,0 +1,8 @@
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Celenia.Licensing\bin\Debug\Lana-soft.Licensing.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Celenia.Licensing\bin\Debug\Lana-soft.Licensing.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Celenia.Licensing\obj\Debug\Lana-soft.Licensing.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Celenia.Licensing\obj\Debug\Lana-soft.Licensing.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Lana-soft.Licensing\bin\Debug\Lana-soft.Licensing.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Lana-soft.Licensing\bin\Debug\Lana-soft.Licensing.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Lana-soft.Licensing\obj\Debug\Lana-soft.Licensing.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\DiscPack\Setup\SetupProject\Licensing\Lana-soft.Licensing\obj\Debug\Lana-soft.Licensing.pdb

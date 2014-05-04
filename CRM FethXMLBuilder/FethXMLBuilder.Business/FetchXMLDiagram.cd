@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="FetchXMLBuilder.Business.Attribute">
+    <Position X="0.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>FetchXMLElements\Attribute.cs</FileName>
+      <HashCode>AAAAAAAEAAAEAAAEAAAAQAAAAAAAAAAACAAAAAAAAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FetchXMLBuilder.Business.Condition">
+    <Position X="6.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>FetchXMLElements\Condition.cs</FileName>
+      <HashCode>AAAAAAAEABEGAAQEAAAAQAAAAgAAABAAAAAgABAAADQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FetchXMLBuilder.Business.Filter">
+    <Position X="3.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>FetchXMLElements\Filter.cs</FileName>
+      <HashCode>QAAAAAAAAAEAQAQEAJAAQAAQAAIAAAAAAQAAAAAAAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FetchXMLBuilder.Business.Entity">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>FetchXMLElements\Entity.cs</FileName>
+      <HashCode>AAEAIAAAAIEAAAAWAIICAAQQAEAAAAAAAABgAAAAAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FetchXMLBuilder.Business.Order">
+    <Position X="5.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>FetchXMLElements\Order.cs</FileName>
+      <HashCode>AAAAAAAAACAAAAAEAAAAQAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FetchXMLBuilder.Business.LinkedEntity">
+    <Position X="8.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>FetchXMLElements\LinkedEntity.cs</FileName>
+      <HashCode>AAAAAEAAAAAAAAAEAAAAQAAAAAAAAAACCAABIAAAAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FetchXMLBuilder.Business.XMLFormatting">
+    <Position X="8.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>XMLFormatting.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="FetchXMLBuilder.Business.FilterType">
+    <Position X="4.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>FetchXMLElements\Base\FilterType.cs</FileName>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="FetchXMLBuilder.Business.ValueType">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>FetchXMLElements\Base\ValueType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAQIAEAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>

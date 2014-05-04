@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FetchXMLBuilder.Services.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FetchXMLBuilder_Services_MSCrmService_asmx_CrmService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:5555/MSCRMServices/2006/CrmService.asmx</Value>
+    </Setting>
+    <Setting Name="FetchXMLBuilder_Services_MSMetadataService_MetadataService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:5555/MSCRMServices/2006/MetadataService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,131 @@
+<ImportExportXml version="3.0.5300.0">
+  <Entities>
+  </Entities>
+  <SiteMap>
+    <SiteMap>
+      <Area Id="Workplace" ResourceId="Area_Workplace" ShowGroups="true" Icon="/_imgs/workplace_24x24.gif" DescriptionResourceId="Workplace_Description">
+        <Group Id="MyWork" ResourceId="Group_MyWork" DescriptionResourceId="My_Work_Description">
+          <SubArea Id="nav_activities" Entity="activitypointer" Url="/Workplace/home_activities.aspx" />
+          <SubArea Id="nav_calendar" Icon="/_imgs/area/18_calendar.gif" ResourceId="Homepage_Calendar" Url="/workplace/home_calendar.aspx" Client="Web">
+            <Privilege Entity="activitypointer" Privilege="Read" />
+          </SubArea>
+          <SubArea Id="nav_queues" Entity="queue" Url="/workplace/home_workplace.aspx">
+            <Privilege Entity="activitypointer" Privilege="Read" />
+          </SubArea>
+          <SubArea Id="nav_answers" Entity="kbarticle" Url="/workplace/home_answers.aspx">
+            <Privilege Entity="subject" Privilege="Read" />
+          </SubArea>
+          <SubArea Id="nav_reports" Icon="/_imgs/area/18_reports.gif" ResourceId="Homepage_Reports" Url="/CRMReports/home_reports.aspx" OutlookShortcutIcon="/_imgs/olk_reports.ico" DescriptionResourceId="Reports_Description" />
+          <SubArea Id="nav_news" Entity="businessunitnewsarticle" Url="/home/homepage/home_news.aspx" />
+        </Group>
+        <Group Id="Customers" ResourceId="Group_Customers" DescriptionResourceId="Customers_Description">
+          <SubArea Id="nav_accts" Entity="account" />
+          <SubArea Id="nav_conts" Entity="contact" />
+        </Group>
+        <Group Id="SFA" ResourceId="Area_Sales" IsProfile="true" DescriptionResourceId="Sales_Description">
+          <SubArea Id="nav_lists1" Entity="list" />
+          <SubArea Id="nav_leads" Entity="lead" />
+          <SubArea Id="nav_oppts" Entity="opportunity" />
+          <SubArea Id="nav_quotes" Entity="quote" />
+          <SubArea Id="nav_orders" Entity="salesorder" />
+          <SubArea Id="nav_invoices" Entity="invoice" />
+        </Group>
+        <Group Id="MA" ResourceId="Area_Marketing" IsProfile="true" DescriptionResourceId="Marketing_Description">
+          <SubArea Id="nav_lists" Entity="list" />
+          <SubArea Id="nav_campaigns" Entity="campaign" Url="/MA/home_camps.aspx" />
+          <SubArea Id="nav_minicamps" ResourceId="Menu_Label_Mini_Campaigns" DescriptionResourceId="Quick_Campaign_Description" Icon="/_imgs/ico_18_minicamps.gif" OutlookShortcutIcon="/_imgs/olk_4400.ico" Url="/MA/home_minicamps.aspx">
+            <Privilege Entity="activitypointer" Privilege="Read" />
+          </SubArea>
+        </Group>
+        <Group Id="CS" ResourceId="Area_Service" IsProfile="true" DescriptionResourceId="Customer_Service_Description">
+          <SubArea Id="nav_cases" Entity="incident" Url="/CS/home_cases.aspx" />
+          <SubArea Id="nav_managekb" ResourceId="Homepage_KBManager" Icon="/_imgs/ico_18_126.gif" Url="/cs/home_managekb.aspx" Client="Web">
+            <Privilege Entity="kbarticle" Privilege="Read,Write,Create" />
+          </SubArea>
+          <SubArea Id="nav_contracts" Entity="contract" />
+        </Group>
+        <Group Id="SM" ResourceId="Area_Scheduling" IsProfile="true">
+          <SubArea Id="nav_apptbook" ResourceId="Homepage_AppointmentBook" Icon="/_imgs/ico_18_servicecal.gif" Url="/sm/home_apptbook.aspx" Client="Web">
+            <Privilege Entity="activitypointer" Privilege="Read" />
+            <Privilege Entity="service" Privilege="Read" />
+          </SubArea>
+        </Group>
+        <Group Id="Extensions" ResourceId="Group_Extensions">
+          <SubArea Id="new_salesheaderdiscount" Entity="new_salesheaderdiscount" />
+          <SubArea Id="new_productdiscountgroup" Entity="new_productdiscountgroup" />
+          <SubArea Id="new_customerdiscountgroup" Entity="new_customerdiscountgroup" />
+          <SubArea Id="new_saleslinesdiscount" Entity="new_saleslinesdiscount" />
+        </Group>
+      </Area>
+      <Area Id="SFA" ResourceId="Area_Sales" Icon="/_imgs/sales_24x24.gif" DescriptionResourceId="Sales_Description">
+        <Group Id="SFA">
+          <SubArea Id="nav_leads" Entity="lead" />
+          <SubArea Id="nav_oppts" Entity="opportunity" />
+          <SubArea Id="nav_accts" Entity="account" />
+          <SubArea Id="nav_conts" Entity="contact" />
+          <SubArea Id="nav_lists" Entity="list" />
+          <SubArea Id="nav_comps" Entity="competitor" />
+          <SubArea Id="nav_products" Entity="product" />
+          <SubArea Id="nav_saleslit" Entity="salesliterature" />
+          <SubArea Id="nav_quotes" Entity="quote" />
+          <SubArea Id="nav_orders" Entity="salesorder" />
+          <SubArea Id="nav_invoices" Entity="invoice" />
+          <SubArea Id="nav_minicamps" ResourceId="Menu_Label_Mini_Campaigns" DescriptionResourceId="Quick_Campaign_Description" Icon="/_imgs/ico_18_minicamps.gif" Url="/MA/home_minicamps.aspx">
+            <Privilege Entity="activitypointer" Privilege="Read" />
+          </SubArea>
+        </Group>
+        <Group Id="Extensions" ResourceId="Group_Extensions">
+          <SubArea Id="new_saleslinesdiscount" Entity="new_saleslinesdiscount" />
+          <SubArea Id="new_salesheaderdiscount" Entity="new_salesheaderdiscount" />
+          <SubArea Id="new_productdiscountgroup" Entity="new_productdiscountgroup" />
+          <SubArea Id="new_customerdiscountgroup" Entity="new_customerdiscountgroup" />
+        </Group>
+      </Area>
+      <Area Id="MA" ResourceId="Area_Marketing" Icon="/_imgs/marketing_24x24.gif" DescriptionResourceId="Marketing_Description">
+        <Group Id="MA">
+          <SubArea Id="nav_leads" Entity="lead" />
+          <SubArea Id="nav_accts" Entity="account" />
+          <SubArea Id="nav_conts" Entity="contact" />
+          <SubArea Id="nav_lists" Entity="list" />
+          <SubArea Id="nav_campaigns" Entity="campaign" Url="/MA/home_camps.aspx" />
+          <SubArea Id="nav_products" Entity="product" />
+          <SubArea Id="nav_saleslit" Entity="salesliterature" />
+          <SubArea Id="nav_minicamps" ResourceId="Menu_Label_Mini_Campaigns" DescriptionResourceId="Quick_Campaign_Description" Icon="/_imgs/ico_18_minicamps.gif" Url="/MA/home_minicamps.aspx">
+            <Privilege Entity="activitypointer" Privilege="Read" />
+          </SubArea>
+        </Group>
+      </Area>
+      <Area Id="CS" ResourceId="Area_Service" Icon="/_imgs/services_24x24.gif" DescriptionResourceId="Customer_Service_Description">
+        <Group Id="CS">
+          <SubArea Id="nav_apptbook" ResourceId="Homepage_AppointmentBook" Icon="/_imgs/ico_18_servicecal.gif" Url="/sm/home_apptbook.aspx" Client="Web">
+            <Privilege Entity="activitypointer" Privilege="Read" />
+            <Privilege Entity="service" Privilege="Read" />
+          </SubArea>
+          <SubArea Id="nav_cases" Entity="incident" Url="/CS/home_cases.aspx" />
+          <SubArea Id="nav_accts" Entity="account" />
+          <SubArea Id="nav_contacts" Entity="contact" />
+          <SubArea Id="nav_managekb" ResourceId="Homepage_KBManager" Icon="/_imgs/ico_18_126.gif" Url="/cs/home_managekb.aspx" Client="Web">
+            <Privilege Entity="kbarticle" Privilege="Read,Write,Create" />
+          </SubArea>
+          <SubArea Id="nav_contracts" Entity="contract" />
+          <SubArea Id="nav_products" Entity="product" />
+          <SubArea Id="nav_services" Entity="service" />
+        </Group>
+      </Area>
+      <Area Id="Settings" ResourceId="Area_Settings" Icon="/_imgs/settings_24x24.gif">
+        <Group Id="Settings">
+          <SubArea Id="nav_settings" ResourceId="Homepage_Settings" Icon="/_imgs/area/18_settings.gif" Url="/tools/home_tools.aspx" Client="Web" />
+          <SubArea Id="nav_syscust" ResourceId="Homepage_SystemCustomization" Icon="/_imgs/area/18_syscust.gif" Url="/tools/systemcustomization/systemcustomization.aspx" Client="Web" />
+        </Group>
+        <Group Id="Extensions" ResourceId="Group_Extensions">
+          <SubArea Id="new_saleslinesdiscount" Entity="new_saleslinesdiscount" />
+          <SubArea Id="new_salesheaderdiscount" Entity="new_salesheaderdiscount" />
+          <SubArea Id="new_productdiscountgroup" Entity="new_productdiscountgroup" />
+          <SubArea Id="new_customerdiscountgroup" Entity="new_customerdiscountgroup" />
+        </Group>
+      </Area>
+    </SiteMap>
+  </SiteMap>
+  <EntityMaps />
+  <EntityRelationships />
+</ImportExportXml>

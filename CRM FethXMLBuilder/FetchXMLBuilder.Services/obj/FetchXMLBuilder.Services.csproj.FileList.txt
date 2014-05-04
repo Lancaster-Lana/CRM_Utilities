@@ -1,0 +1,6 @@
+bin\Debug\FetchXMLBuilder.Services.dll.config
+bin\Debug\FetchXMLBuilder.Services.dll
+bin\Debug\FetchXMLBuilder.Services.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\FetchXMLBuilder.Services.dll
+obj\Debug\FetchXMLBuilder.Services.pdb

@@ -1,0 +1,28 @@
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder.Business\bin\Debug\FethXMLBuilder.Business.dll
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder.Business\bin\Debug\FethXMLBuilder.Business.pdb
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder.Business\bin\Debug\FetchXMLBuilder.Services.dll
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder.Business\bin\Debug\FetchXMLBuilder.Services.pdb
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder.Business\obj\Debug\ResolveAssemblyReference.cache
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder.Business\obj\Debug\FetchXMLBuilder.Business.Properties.Resources.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder.Business\obj\Debug\GenerateResource-ResGen.read.1.tlog
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder.Business\obj\Debug\GenerateResource-ResGen.write.1.tlog
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder.Business\obj\Debug\FethXMLBuilder.Business.dll
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder\FethXMLBuilder.Business\obj\Debug\FethXMLBuilder.Business.pdb
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder.Business\bin\Debug\FethXMLBuilder.Business.dll
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder.Business\bin\Debug\FethXMLBuilder.Business.pdb
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder.Business\bin\Debug\FetchXMLBuilder.Services.dll
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder.Business\bin\Debug\FetchXMLBuilder.Services.pdb
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder.Business\obj\Debug\FecthXMLBuilder.Business.csprojResolveAssemblyReference.cache
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder.Business\obj\Debug\FetchXMLBuilder.Business.Properties.Resources.resources
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder.Business\obj\Debug\FecthXMLBuilder.Business.csproj.GenerateResource.Cache
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder.Business\obj\Debug\FethXMLBuilder.Business.dll
+G:\MY PROJECTS\2. CELENIA\FethXMLBuilder_best\FethXMLBuilder.Business\obj\Debug\FethXMLBuilder.Business.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder.Business\bin\Debug\FethXMLBuilder.Business.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder.Business\bin\Debug\FethXMLBuilder.Business.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder.Business\bin\Debug\FetchXMLBuilder.Services.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder.Business\bin\Debug\FetchXMLBuilder.Services.pdb
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder.Business\obj\Debug\FecthXMLBuilder.Business.csprojResolveAssemblyReference.cache
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder.Business\obj\Debug\FetchXMLBuilder.Business.Properties.Resources.resources
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder.Business\obj\Debug\FecthXMLBuilder.Business.csproj.GenerateResource.Cache
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder.Business\obj\Debug\FethXMLBuilder.Business.dll
+G:\MY PROJECTS\! GOLD PROJECTS - github\FethXMLBuilder_best\FethXMLBuilder.Business\obj\Debug\FethXMLBuilder.Business.pdb

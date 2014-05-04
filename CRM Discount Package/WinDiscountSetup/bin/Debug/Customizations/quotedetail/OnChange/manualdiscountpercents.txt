@@ -1,0 +1,12 @@
+// ___Discount Package 3.0___
+var manualdiscountpercents=  crmForm.all.new_manualdiscountpercents.value;
+    manualdiscountpercents =  ((manualdiscountpercents == null)||(manualdiscountpercents.length  == null))? 0:LocStringToFloat(manualdiscountpercents);      
+var baseamount = crmForm.all.baseamount.value.replace(ORG_CURRENCY_SYMBOL,"");
+       baseamount =  (baseamount.length  == null)? 0: LocStringToFloat(baseamount);
+
+if(baseamount  == 0)
+{
+        alert(" Amount($) is not calculated yet. Click Save, then provide value for Discount(%)  to recalculate Manual Discount($) !");
+}
+else
+    crmForm.all.manualdiscountamount.DataValue = manualdiscountpercents*baseamount /100;

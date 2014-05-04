@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FetchXMLBuilder.UI", "FethXMLBuilder\FetchXMLBuilder.UI.csproj", "{90185C69-3256-4713-9433-AC41415F1968}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FecthXMLBuilder.Business", "FethXMLBuilder.Business\FecthXMLBuilder.Business.csproj", "{94817F0C-4AEA-4CE7-B9E1-8049987FB291}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FetchXMLBuilder.Services", "FetchXMLBuilder.Services\FetchXMLBuilder.Services.csproj", "{D9E1985C-DF0F-4AE2-BE37-494F63657803}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90185C69-3256-4713-9433-AC41415F1968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90185C69-3256-4713-9433-AC41415F1968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90185C69-3256-4713-9433-AC41415F1968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90185C69-3256-4713-9433-AC41415F1968}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94817F0C-4AEA-4CE7-B9E1-8049987FB291}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94817F0C-4AEA-4CE7-B9E1-8049987FB291}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94817F0C-4AEA-4CE7-B9E1-8049987FB291}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94817F0C-4AEA-4CE7-B9E1-8049987FB291}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9E1985C-DF0F-4AE2-BE37-494F63657803}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9E1985C-DF0F-4AE2-BE37-494F63657803}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9E1985C-DF0F-4AE2-BE37-494F63657803}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9E1985C-DF0F-4AE2-BE37-494F63657803}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SpecExplorer.ActivityCompletionStatus) = preSolution
+		SpecExplorer.ActivityCompletionStatus = TestExisting: ;ModelFromScratch: 
+	EndGlobalSection
+EndGlobal

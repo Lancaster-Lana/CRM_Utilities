@@ -1,0 +1,197 @@
+//	___Discount Package 3.0___
+//1___Hide  additional fields with product  information
+
+   if(crmForm.all.IFRAME_Account != null)  
+     crmForm.all.IFRAME_Account.style.visibility = 'hidden';
+   if(crmForm.all.IFRAME_Quote != null)
+       crmForm.all.IFRAME_Quote.style.visibility = 'hidden'; 
+   if(crmForm.all.IFRAME_Product != null)
+     crmForm.all.IFRAME_Product.style.visibility = 'hidden';
+  if(crmForm.all.new_productgroup != null)
+      crmForm.all.new_productgroup.style.visibility = 'hidden';
+  if(crmForm.all.new_customergroup != null)
+      crmForm.all.new_customergroup.style.visibility = 'hidden';
+  if(crmForm.all.new_parentaccount != null)
+      crmForm.all.new_parentaccount.style.visibility = 'hidden';   
+
+
+//2___ Get FetchXML function to filter 'Sales Lines Discount' lookup 
+
+function GetFetchXML(account, productid, uomid, quantity, nowDT)
+{                
+       var filterSTR =
+            "<filter type='and'>"
+           +  "<filter type='or'>"
+           +     "<condition attribute='new_parentaccountid' operator='eq' value='" + account + "'/>"
+           +     "<condition attribute='new_customerdiscountgroupid' operator='eq' value='" + crmForm.all.new_customergroup.value  + "'/>"
+           +  "</filter>"
+           +  "<filter type='or'>"
+           +    "<condition attribute='new_relatedproductid' operator='eq' value='" +  productid +"'/>"
+           +    "<condition attribute='new_productdiscountgroupid'  operator='eq' value='" + crmForm.all.new_productgroup.value  + "'/>"
+           +  "</filter>";
+
+           if(uomid  != null) 
+          {
+              filterSTR  += 
+                "<filter type='or'>"
+           +      "<condition attribute='new_uomname' operator='eq' value='"+ uomid +"'/>"
+           +      "<condition attribute='new_uomname' operator='null' />"
+           +  "</filter>";
+           }
+
+             filterSTR  += 
+             "<filter type='or'>"
+           +    "<condition attribute='new_startingdate' operator='le' value='" +  nowDT +"'/>"
+           +    "<condition attribute='new_startingdate' operator='null' />"
+           +  "</filter>"
+           +  "<filter type='or'>"
+           +    "<condition attribute='new_endingdate' operator='ge' value='" +  nowDT +"'/>"
+           +    "<condition attribute='new_endingdate' operator='null' />"
+           +  "</filter>" ;
+
+           if (quantity   > 0)  //crmForm.FormType == UpdateFormType
+           {
+              filterSTR  += 
+                  "<filter type='or'>" 
+            +    "<condition attribute='new_minimumquantity' operator='le' value='" + quantity +"'/>"
+            +  "</filter>";
+            }       
+         filterSTR  +=  "</filter>";
+
+        var additionalparams =  
+          "<fetch  mapping='logical'>"
+          +   "<entity name='new_saleslinesdiscount'>"
+          +   "<all-attributes/>"
+          +   filterSTR 
+          +"</entity>"
+          +"</fetch>";
+
+      return additionalparams;
+}
+
+//3____LOOKUP FOR "SALES LINES DISCOUNT"  called by onClick event of  toolbar button "LINES DISCOUNTS..."
+
+     //3.1___ Fill  IFrame_Quote with quote information. Quote onLoad method fills accountid field
+     if((crmForm.all.IFRAME_Quote != null)&&(crmForm.all.quoteid !=  null)&&(crmForm.all.quoteid.value!= null))
+     {
+         var quoteUrl = "/_forms/readonly/readonly.aspx?objTypeCode=1084&id="+crmForm.all.quoteid.value;      
+         crmForm.all.IFRAME_Quote.src = quoteUrl;
+       }    
+
+     //3.2___ Fill  IFrame_Product with product  information
+     if((crmForm.all.IFRAME_Product != null)&&(crmForm.all.productid != null)&&(crmForm.all.productid.DataValue != null))
+     {
+           var productUrl = "/_forms/readonly/readonly.aspx?objTypeCode=1024&id="+crmForm.all.productid.DataValue[0].id;
+           crmForm.all.IFRAME_Product.src = productUrl;
+      }  
+
+     //3.3
+document.body.ShowLookUp = function()
+{      
+    if ((crmForm.all.productid.DataValue == null) || (typeof(crmForm.all.productid.DataValue[0]) == "undefined"))
+   {
+      alert("You must provide a value for Product !");
+   }
+   else if ((typeof(crmForm.all.productid.DataValue[0]) != "undefined")&& (typeof(crmForm.all.productid.DataValue[0].name) != "undefined"))
+   {               
+                var ___LinesDiscountCode = 10001;	        	        
+                var amount =  crmForm.all.baseamount.value.replace(ORG_CURRENCY_SYMBOL,"");      
+                     amount =  (amount.length   == 0)?0: LocStringToFloat(amount);
+
+               //Build FetchXML                  
+               var quantity = (crmForm.all.quantity.value.length  == 0)? 0:LocStringToFloat(crmForm.all.quantity.value);
+               var account = crmForm.all.new_parentaccount.value;
+               var productid = (crmForm.all.productid.DataValue  == null)? null :crmForm.all.productid.DataValue[0].id;                   
+               var uomid = (crmForm.all.uomid.DataValue  == null)? null :crmForm.all.uomid.DataValue[0].name;
+               var nowDT = LocalDateTimeNow();
+               var nowDTFormat = FormatDateTime(nowDT);
+
+               var addParams =  GetFetchXML(account, productid, uomid, quantity, nowDTFormat);
+               var url = "/_controls/lookup/lookupsingle.aspx?objecttypes=" + ___LinesDiscountCode +"&browse=1&fetchXml=" + addParams;
+
+                var isRealDiscount  = false;
+                var returnValue = null;
+            
+ do
+{              
+       returnValue =  window.showModalDialog(url);	
+       isRealDiscount = true;
+       
+       if (returnValue != null)
+       {                   
+                var minimumquantity = 0;
+               if((returnValue.items[0].keyValues["new_minimumquantity"].value != null)&&(returnValue.items[0].keyValues["new_minimumquantity"].value.length > 0))
+                 minimumquantity = LocStringToFloat(returnValue.items[0].keyValues["new_minimumquantity"].value);
+                
+                var quantity =   (crmForm.all.quantity.value.length  == 0)? 0:LocStringToFloat(crmForm.all.quantity.value);
+
+        //____________Check Quantity 
+         if (minimumquantity > quantity )
+         {
+                         var mess = "Discount is unavailable:  Quantity is less than " + minimumquantity + "!.  Provide greater Quantity value to be the discount applied!"
+                       alert(mess );             
+                       //isRealDiscount = false;             
+                       continue;
+          }
+      
+         //____________Check Date
+         var dateStart=returnValue.items[0].keyValues["new_startingdate"].value;
+         var dateEnd= returnValue.items[0].keyValues["new_endingdate"].value;
+       
+        if((dateStart != null)&&(dateStart.length>0))
+       {
+            dateStart = ParseDateTime(dateStart);            
+            if(dateStart.getTime()>nowDT.getTime())
+           {
+             alert('Discount is not started!');             
+             isRealDiscount = false;             
+             continue;
+           }
+        }
+      
+        if((dateEnd!= null)&&(dateEnd.length>0))       
+        {
+            dateEnd= ParseDateTime(dateEnd);
+           if(dateEnd.getTime()<nowDT.getTime())
+           {
+              alert('Discount is ended already!');              
+              isRealDiscount = false;             
+              continue;
+           }
+        }
+            //___Offer Discount
+            var discountpercents = 0;
+            if((returnValue.items[0].keyValues["new_discountpercents"].value != null)&&(returnValue.items[0].keyValues["new_discountpercents"].value.length > 0))
+           discountpercents =  LocStringToFloat(returnValue.items[0].keyValues["new_discountpercents"].value);
+
+          if((isRealDiscount)&&(discountpercents > 0))         
+         {
+                       var uomname= returnValue.items[0].keyValues["new_uomname"].value;                                                                              	  
+                        if(crmForm.all.baseamount.value.length == 0)
+                        {
+                            alert(" Amount($) value must be recalculated before applying a discount. Click Save and repeat your actions to select a discount!");
+                       }
+                        else
+                       {
+                               if (confirm("Apply discount?" ,"Yes", "No"))
+                               {                                   
+                                  if(discountpercents != null)
+                                  {
+                                             crmForm.all.new_manualdiscountpercents.DataValue = discountpercents;
+                                        var baseamount = crmForm.all.baseamount.value.replace(ORG_CURRENCY_SYMBOL,"");
+                                              baseamount  =   (baseamount.length == 0) ? 0 : LocStringToFloat(baseamount);
+                                              crmForm.all.manualdiscountamount.DataValue = discountpercents*baseamount /100;
+                                         alert("Extended Amount($) value is not recalculated yet. Click Save!"); 
+                                 }
+                      }                       
+                    }
+
+          }
+
+      }
+
+
+} while((!isRealDiscount)&&(returnValue != null))
+
+   }
+}
